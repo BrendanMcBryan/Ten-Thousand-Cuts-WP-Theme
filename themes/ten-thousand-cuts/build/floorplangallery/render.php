@@ -9,7 +9,7 @@
 	<div class="floorplanGallery__filter">
 		<div class="filter-buttons">
 			<button class="filter-button active" data-filter="all">All</button>
-			<button class="filter-button" data-filter="OneBed">1 Bed</button>
+			<button class="filter-button" data-filter="OneBed">1 ed</button>
 			<button class="filter-button" data-filter="OneBedDen">1 Bed + Den</button>
 			<button class="filter-button" data-filter="TwoBed">2 Bed</button>
 			<button class="filter-button" data-filter="TwoBedDen">2 Bed + Den</button>

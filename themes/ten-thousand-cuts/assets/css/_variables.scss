@@ -1,0 +1,56 @@
+$small-width: 481px;
+$tablet-width: 600px;
+$desktop-width: 1080px;
+$large-width: 1280px;
+
+$alert-yellow: #ebe16f;
+$alert-red: #c91013;
+$alert-green: #8abe43;
+$alert-blue: #579ac8;
+
+$black: #000;
+$white: #fff;
+$light-gray: #d9d9d9;
+$gray: #99999a;
+$dark-gray: #1d1d21;
+$gold: #a3905e;
+
+$primary-color: $gold;
+$secondary-color: $dark-gray;
+$tertiary-color: $gray;
+
+$text-color: $black;
+
+$border-color: #ccc;
+$disabled-gray: #cfcfcf;
+
+// Gutenberg color options
+// -- see editor-color-palette in functions.php
+$colors: ('white', $white), ('gray', $gray), ('light-gray', $light-gray),
+  ('dark-gray', $dark-gray), ('black', $black), ('gold', $gold);
+
+/* Color Options
+--------------------------------------------- */
+
+@each $name, $color in $colors {
+  .has-#{$name}-color {
+    color: $color !important;
+  }
+  .has-#{$name}-background-color {
+    background-color: $color;
+  }
+  a.has-#{$name}-background-color {
+    &:active,
+    &:hover {
+      background-color: lighten($color, 10%);
+    }
+  }
+  .is-style-outline .has-#{$name}-color {
+    //transition: box-shadow .2s ease-in-out;
+    &:active,
+    &:hover {
+      //box-shadow: 0 0 6px $color;
+      background-color: lighten($color, 60%);
+    }
+  }
+}
