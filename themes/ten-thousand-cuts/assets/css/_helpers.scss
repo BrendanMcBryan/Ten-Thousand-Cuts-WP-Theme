@@ -1,0 +1,114 @@
+/**************************
+ * base margin/padding
+ **************************/
+
+$i: 0;
+$step: 5;
+@while $i <= 100 {
+  .m#{$i} {
+    margin: #{$i}px !important;
+  }
+  .mt#{$i} {
+    margin-top: #{$i}px !important;
+  }
+  .mr#{$i} {
+    margin-right: #{$i}px !important;
+  }
+  .mb#{$i} {
+    margin-bottom: #{$i}px !important;
+  }
+  .ml#{$i} {
+    margin-left: #{$i}px !important;
+  }
+
+  .m-#{$i} {
+    margin: -#{$i}px !important;
+  }
+  .mt-#{$i} {
+    margin-top: -#{$i}px !important;
+  }
+  .mr-#{$i} {
+    margin-right: -#{$i}px !important;
+  }
+  .mb-#{$i} {
+    margin-bottom: -#{$i}px !important;
+  }
+  .ml-#{$i} {
+    margin-left: -#{$i}px !important;
+  }
+
+  .p#{$i} {
+    padding: #{$i}px !important;
+  }
+  .pt#{$i} {
+    padding-top: #{$i}px !important;
+  }
+  .pr#{$i} {
+    padding-right: #{$i}px !important;
+  }
+  .pb#{$i} {
+    padding-bottom: #{$i}px !important;
+  }
+  .pl#{$i} {
+    padding-left: #{$i}px !important;
+  }
+
+  .ty#{$i} {
+    transform: translateY(#{$i}px);
+  }
+  .tx#{$i} {
+    transform: translateX(#{$i}px);
+  }
+
+  .ty-#{$i} {
+    transform: translateY(-#{$i}px);
+  }
+  .tx-#{$i} {
+    transform: translateX(-#{$i}px);
+  }
+
+  $i: $i + $step;
+}
+
+/**************************
+ * Design Flourishes
+**************************/
+
+.leaf {
+  border-bottom-right-radius: 2em;
+  border-top-left-radius: 2em;
+  img {
+    border-bottom-right-radius: 2em;
+    border-top-left-radius: 2em;
+  }
+}
+.leafbig {
+  border-bottom-right-radius: 4em;
+  border-top-left-radius: 4em;
+  img {
+    border-bottom-right-radius: 4em;
+    border-top-left-radius: 4em;
+  }
+}
+
+.downShadow {
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  // z-index: 500;
+}
+/**************************
+ * Animation Flourishes
+**************************/
+.scaleOnHover {
+  transition: 1.2s;
+  &:hover {
+    scale: 1.25;
+  }
+}
+.scaleOnHoverSmall {
+  transition: 1.2s;
+  transform-origin: 100% 50%;
+  &:hover {
+    scale: 1.1;
+    // transform-origin: 100% 50%;
+  }
+}

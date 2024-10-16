@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Ten Thousand Cuts functions and definitions
  *
@@ -12,20 +13,21 @@
  * Register block styles.
  */
 
-if ( ! function_exists( 'ten_thousand_cuts_block_styles' ) ) :
+if (! function_exists('ten_thousand_cuts_block_styles')) :
 	/**
 	 * Register custom block styles
 	 *
 	 * @since Ten Thousand Cuts 1.0
 	 * @return void
 	 */
-	function ten_thousand_cuts_block_styles() {
+	function ten_thousand_cuts_block_styles()
+	{
 
 		register_block_style(
 			'core/details',
 			array(
 				'name'         => 'arrow-icon-details',
-				'label'        => __( 'Arrow icon', 'ten-thousand-cuts' ),
+				'label'        => __('Arrow icon', 'ten-thousand-cuts'),
 				/*
 				 * Styles for the custom Arrow icon style of the Details block
 				 */
@@ -48,7 +50,7 @@ if ( ! function_exists( 'ten_thousand_cuts_block_styles' ) ) :
 			'core/post-terms',
 			array(
 				'name'         => 'pill',
-				'label'        => __( 'Pill', 'ten-thousand-cuts' ),
+				'label'        => __('Pill', 'ten-thousand-cuts'),
 				/*
 				 * Styles variation for post terms
 				 * https://github.com/WordPress/gutenberg/issues/24956
@@ -71,7 +73,7 @@ if ( ! function_exists( 'ten_thousand_cuts_block_styles' ) ) :
 			'core/list',
 			array(
 				'name'         => 'checkmark-list',
-				'label'        => __( 'Checkmark', 'ten-thousand-cuts' ),
+				'label'        => __('Checkmark', 'ten-thousand-cuts'),
 				/*
 				 * Styles for the custom checkmark list block style
 				 * https://github.com/WordPress/gutenberg/issues/51480
@@ -90,7 +92,7 @@ if ( ! function_exists( 'ten_thousand_cuts_block_styles' ) ) :
 			'core/navigation-link',
 			array(
 				'name'         => 'arrow-link',
-				'label'        => __( 'With arrow', 'ten-thousand-cuts' ),
+				'label'        => __('With arrow', 'ten-thousand-cuts'),
 				/*
 				 * Styles for the custom arrow nav link block style
 				 */
@@ -108,7 +110,7 @@ if ( ! function_exists( 'ten_thousand_cuts_block_styles' ) ) :
 			'core/heading',
 			array(
 				'name'         => 'asterisk',
-				'label'        => __( 'With asterisk', 'ten-thousand-cuts' ),
+				'label'        => __('With asterisk', 'ten-thousand-cuts'),
 				'inline_style' => "
 				.is-style-asterisk:before {
 					content: '';
@@ -144,20 +146,21 @@ if ( ! function_exists( 'ten_thousand_cuts_block_styles' ) ) :
 	}
 endif;
 
-add_action( 'init', 'ten_thousand_cuts_block_styles' );
+add_action('init', 'ten_thousand_cuts_block_styles');
 
 /**
  * Enqueue block stylesheets.
  */
 
-if ( ! function_exists( 'ten_thousand_cuts_block_stylesheets' ) ) :
+if (! function_exists('ten_thousand_cuts_block_stylesheets')) :
 	/**
 	 * Enqueue custom block stylesheets
 	 *
 	 * @since Ten Thousand Cuts 1.0
 	 * @return void
 	 */
-	function ten_thousand_cuts_block_stylesheets() {
+	function ten_thousand_cuts_block_stylesheets()
+	{
 		/**
 		 * The wp_enqueue_block_style() function allows us to enqueue a stylesheet
 		 * for a specific block. These will only get loaded when the block is rendered
@@ -170,37 +173,80 @@ if ( ! function_exists( 'ten_thousand_cuts_block_stylesheets' ) ) :
 			'core/button',
 			array(
 				'handle' => 'ten-thousand-cuts-button-style-outline',
-				'src'    => get_parent_theme_file_uri( 'assets/css/button-outline.css' ),
-				'ver'    => wp_get_theme( get_template() )->get( 'Version' ),
-				'path'   => get_parent_theme_file_path( 'assets/css/button-outline.css' ),
+				'src'    => get_parent_theme_file_uri('assets/css/button-outline.css'),
+				'ver'    => wp_get_theme(get_template())->get('Version'),
+				'path'   => get_parent_theme_file_path('assets/css/button-outline.css'),
 			)
 		);
 	}
 endif;
 
-add_action( 'init', 'ten_thousand_cuts_block_stylesheets' );
+add_action('init', 'ten_thousand_cuts_block_stylesheets');
 
 /**
  * Register pattern categories.
  */
 
-if ( ! function_exists( 'ten_thousand_cuts_pattern_categories' ) ) :
+if (! function_exists('ten_thousand_cuts_pattern_categories')) :
 	/**
 	 * Register pattern categories
 	 *
 	 * @since Ten Thousand Cuts 1.0
 	 * @return void
 	 */
-	function ten_thousand_cuts_pattern_categories() {
+	function ten_thousand_cuts_pattern_categories()
+	{
 
 		register_block_pattern_category(
 			'ten_thousand_cuts_page',
 			array(
-				'label'       => _x( 'Pages', 'Block pattern category', 'ten-thousand-cuts' ),
-				'description' => __( 'A collection of full page layouts.', 'ten-thousand-cuts' ),
+				'label'       => _x('Pages', 'Block pattern category', 'ten-thousand-cuts'),
+				'description' => __('A collection of full page layouts.', 'ten-thousand-cuts'),
 			)
 		);
 	}
 endif;
 
-add_action( 'init', 'ten_thousand_cuts_pattern_categories' );
+add_action('init', 'ten_thousand_cuts_pattern_categories');
+
+
+// Load Custom Style Sheets
+
+function ten_thousand_cuts_files()
+{
+	wp_enqueue_style('ten_thousand_cuts_main_styles', get_theme_file_uri('/build/style-index.css'));
+	wp_enqueue_style('ten_thousand_cuts_extra_styles', get_theme_file_uri('/build/index.css'));
+	wp_enqueue_style('Font_Awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
+
+	// wp_enqueue_style('custom-google-fonts', 'https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+	wp_localize_script('main-ten_thousand_cuts-js', 'tenThousandCutsData', array(
+		'root_url' => get_site_url(),
+		'nonce' => wp_create_nonce('wp_rest')
+	));
+}
+add_action('wp_enqueue_scripts', 'ten_thousand_cuts_files');
+
+function ten_thousand_cuts_features()
+{
+	// add_theme_support('title-tag');
+	// add_theme_support('post-thumbnails');
+	// add_image_size('professorLandscape', 400, 260, true);
+	// add_image_size('professorPortrait', 480, 650, true);
+	// add_image_size('pageBanner', 1500, 350, true);
+	add_theme_support('editor-styles');
+	add_editor_style(array('build/style-index.css', 'build/index.css'));
+}
+
+add_action('after_setup_theme', 'ten_thousand_cuts_features');
+
+
+// Register Ten Tousand Custs blocks
+function ten_thousand_cuts_blocks()
+{
+	wp_localize_script('wp-editor', 'ourThemeData', array('themePath' => get_stylesheet_directory_uri()));
+
+	register_block_type_from_metadata(__DIR__ . '/build/banner');
+	register_block_type_from_metadata(__DIR__ . '/build/floorplangallery');
+}
+
+add_action('init', 'ten_thousand_cuts_blocks');

@@ -1,6 +1,6 @@
 == Ten Thousand Cuts ==
 
-Contributors: Brendan
+Contributors: Brendan McBryan
 Requires at least: 6.0
 Tested up to: 6.6
 Requires PHP: 5.7
@@ -11,7 +11,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 == Description ==
 
 Homage to the Printed Page
-
 
 == Changelog ==
 

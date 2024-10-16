@@ -1,0 +1,21 @@
+a {
+  text-decoration: none;
+}
+
+@mixin atSmall {
+  @media (max-width: 530px) {
+    @content;
+  }
+}
+
+@mixin atSmallMedium {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin atMedium {
+  @media (max-width: 960px) {
+    @content;
+  }
+}

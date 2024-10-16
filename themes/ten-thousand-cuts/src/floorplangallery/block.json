@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tenthousandcuts/floorplangallery",
+  "version": "0.1.0",
+  "title": "Floorplan Gallery",
+  "category": "theme",
+  "icon": "images-alt2",
+  "description": "Gallery with Filter of avaiable Units",
+  "example": {},
+  "supports": {
+    "interactivity": true
+  },
+  "textdomain": "floorplangallery",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScriptModule": "file:./view.js"
+}

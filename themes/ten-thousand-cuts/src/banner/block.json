@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tenthousandcuts/banner",
+  "title": "ClaretDC Banner",
+  "description": "Darkened Image Background with Claret Generic Headings allowed",
+  "icon": "table-row-before",
+  "category": "theme",
+  "example": {},
+
+  "supports": {
+    "align": ["full"],
+    "interactivity": true
+  },
+  "attributes": {
+    "align": { "type": "string", "default": "full" },
+    "imgID": { "type": "number" },
+    "imgURL": { "type": "string" },
+    "height": { "type": "number", "default": 50 },
+    "hasDownArrow": { "type": "boolean", "default": false }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}
