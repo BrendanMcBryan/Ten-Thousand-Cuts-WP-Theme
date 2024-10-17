@@ -233,6 +233,7 @@ function ten_thousand_cuts_features()
 	// add_image_size('professorLandscape', 400, 260, true);
 	// add_image_size('professorPortrait', 480, 650, true);
 	// add_image_size('pageBanner', 1500, 350, true);
+	// add_theme_support('appearance-tools');
 	add_theme_support('editor-styles');
 	add_editor_style(array('build/style-index.css', 'build/index.css'));
 }
