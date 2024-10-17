@@ -6,8 +6,8 @@ if (!isset($attributes['imgURL'])) {
 
 ?>
 
-<section class="landing-page">
-  <div class="landing-page__bg-image" style="background-image: url('<?php echo $attributes['imgURL'] ?>')"></div>
+<section class="landing-page" style="background-image: url('<?php echo $attributes['imgURL'] ?>')">
+
   <div class="landing-page__content">
     <?php echo $content; ?>
   </div>
