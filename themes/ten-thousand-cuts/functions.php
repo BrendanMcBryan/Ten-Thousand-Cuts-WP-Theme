@@ -257,7 +257,7 @@ function my_theme_deny_list_blocks()
 {
 	wp_enqueue_script(
 		'deny-list-blocks',
-		get_template_directory_uri() . '/build/assets/js/deny-list-blocks.js',
+		get_template_directory_uri() . '/assets/js/deny-list-blocks.js',
 		array('wp-blocks', 'wp-dom-ready', 'wp-edit-post')
 	);
 }
