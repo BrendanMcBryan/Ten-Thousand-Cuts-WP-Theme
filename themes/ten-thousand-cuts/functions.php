@@ -233,7 +233,7 @@ function ten_thousand_cuts_features()
 	// add_image_size('professorLandscape', 400, 260, true);
 	// add_image_size('professorPortrait', 480, 650, true);
 	// add_image_size('pageBanner', 1500, 350, true);
-	// add_theme_support('appearance-tools');
+	add_theme_support('appearance-tools');
 	add_theme_support('editor-styles');
 	add_editor_style(array('build/style-index.css', 'build/index.css'));
 }
@@ -251,3 +251,14 @@ function ten_thousand_cuts_blocks()
 }
 
 add_action('init', 'ten_thousand_cuts_blocks');
+
+// Disable uneeded blocks. 
+function my_theme_deny_list_blocks()
+{
+	wp_enqueue_script(
+		'deny-list-blocks',
+		get_template_directory_uri() . '/build/assets/js/deny-list-blocks.js',
+		array('wp-blocks', 'wp-dom-ready', 'wp-edit-post')
+	);
+}
+add_action('enqueue_block_editor_assets', 'my_theme_deny_list_blocks');
