@@ -159,12 +159,12 @@
           "slug": "accent-3"
         },
         {
-          "color": "##4fc22c",
+          "color": "#4fc22c",
           "name": "Accent / Four",
           "slug": "accent-4"
         },
         {
-          "color": "##2ca2c2",
+          "color": "#2ca2c2",
           "name": "Accent / Five",
           "slug": "accent-5"
         },
@@ -950,8 +950,8 @@
       "blockGap": "1.2rem",
       "padding": {
         "bottom": "0px",
-        "left": "var(--wp--preset--spacing--10)",
-        "right": "var(--wp--preset--spacing--10)",
+        "left": "0px",
+        "right": "0px",
         "top": "0px"
       }
     },

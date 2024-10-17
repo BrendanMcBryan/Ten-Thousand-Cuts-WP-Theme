@@ -248,6 +248,8 @@ function ten_thousand_cuts_blocks()
 
 	register_block_type_from_metadata(__DIR__ . '/build/banner');
 	register_block_type_from_metadata(__DIR__ . '/build/floorplangallery');
+	register_block_type_from_metadata(__DIR__ . '/build/homelanding');
+	register_block_type_from_metadata(__DIR__ . '/build/artworkdisplaycontainer');
 }
 
 add_action('init', 'ten_thousand_cuts_blocks');

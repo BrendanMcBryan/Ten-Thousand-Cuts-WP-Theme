@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tenthousandcuts/artworkdisplaycontainer",
+  "version": "0.1.0",
+  "title": "Artwork Display",
+  "category": "theme",
+  "icon": "format-gallery",
+  "description": "Block to control main Display container for artowork",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "artworkdisplaycontainer",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

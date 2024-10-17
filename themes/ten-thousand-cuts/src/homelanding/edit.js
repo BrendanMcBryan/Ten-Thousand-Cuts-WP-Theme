@@ -53,24 +53,8 @@ export default function Edit({ attributes, setAttributes }) {
     <div {...blockProps}>
       <InspectorControls>
         <PanelBody title="Background" initialOpen={true}>
-          <PanelRow>
-            <ToggleControl
-              label="Has Down Arrow?"
-              onChange={(value) => setAttributes({ hasDownArrow: value })}
-              help={attributes.hasDownArrow ? 'Has Disc.' : 'No Disc.'}
-              checked={attributes.hasDownArrow}
-            />
-          </PanelRow>
-          {/* <PanelRow>
-            <RangeControl
-              label="Height(VH)"
-              value={attributes.height}
-              onChange={(value) =>setAttributes({ height: value })}
-              min={5}
-              max={100}
-              help="enter heigh in VH"
-            ></RangeControl>
-          </PanelRow> */}
+          <PanelRow></PanelRow>
+
           <PanelRow>
             <MediaUploadCheck>
               <MediaUpload
@@ -84,23 +68,24 @@ export default function Edit({ attributes, setAttributes }) {
           </PanelRow>
         </PanelBody>
       </InspectorControls>
-      <div className="page-banner">
+      <div className="landing-page">
         <div
-          className="page-banner__bg-image"
+          className="landing-page__bg-image"
           style={{
             backgroundImage: `url('${attributes.imgURL}')`,
           }}
         ></div>
-        <div className="page-banner__content container t-center c-white">
+        <div className="landing-page__content">
           <InnerBlocks
             allowedBlocks={[
               'core/spacer',
+              'core/site-title',
+              'core/site-tagline',
+              'core/columns',
+              'core/buttons',
               'tenthousandcuts/artworkdisplaycontainer',
             ]}
           />
-        </div>
-        <div className="downarrow">
-          <i class="fa-solid fa-chevron-down">you can add down arrow</i>
         </div>
       </div>
     </div>

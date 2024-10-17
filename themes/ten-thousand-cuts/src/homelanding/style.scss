@@ -1,0 +1,54 @@
+@import '../../assets/css/variables';
+@import '../../assets/css/typography';
+@import '../../assets/css/mixins';
+
+.landing-page {
+  max-width: 100% !important;
+  background-color: #000;
+  text-align: center;
+  height: 100%;
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  @include atSmall {
+    padding: 130px 0 60px 0;
+  }
+
+  &__content {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+  }
+  .container {
+    width: 90% !important;
+  }
+  &__title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 3.6rem;
+    margin: 0 0 1rem 0;
+
+    @include atSmall {
+      font-size: 5rem;
+    }
+  }
+
+  &__bg-image {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}

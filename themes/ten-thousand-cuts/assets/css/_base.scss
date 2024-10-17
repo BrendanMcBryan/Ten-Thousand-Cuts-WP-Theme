@@ -1,7 +1,19 @@
-.home-main {
+// .home-main {
+//   height: 100vh;
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   .entry-content {
+//     min-height: 100vh;
+//     .wp-block-group {
+//       min-height: 100vh;
+//     }
+//   }
+// }
+
+html,
+body,
+.wp-site-blocks {
   height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }

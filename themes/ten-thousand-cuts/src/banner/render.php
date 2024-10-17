@@ -1,7 +1,7 @@
 <?php
 
 if (!isset($attributes['imgURL'])) {
-  $attributes['imgURL'] = get_theme_file_uri('/assets/images/ClaretDC-defualtRendering.webp');
+  $attributes['imgURL'] = get_theme_file_uri('/assets/images/Museum Window.webp');
 }
 
 ?>
