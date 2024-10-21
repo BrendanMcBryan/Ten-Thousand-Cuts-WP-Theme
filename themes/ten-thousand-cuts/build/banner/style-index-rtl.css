@@ -119,7 +119,7 @@ Imaging with any questions regarding Web Fonts:  http://www.fonts.com
   padding: 140px 0 40px 0;
   position: relative;
 }
-@media (min-width: 530px) {
+@media (max-width: 530px) {
   .page-banner {
     padding: 130px 0 60px 0;
   }
@@ -132,7 +132,7 @@ Imaging with any questions regarding Web Fonts:  http://www.fonts.com
   justify-content: center;
   z-index: 2;
 }
-@media (min-width: 530px) {
+@media (max-width: 530px) {
   .page-banner__content {
     min-height: 50vh;
   }
@@ -149,7 +149,7 @@ Imaging with any questions regarding Web Fonts:  http://www.fonts.com
   font-size: 3.6rem;
   margin: 0 0 1rem 0;
 }
-@media (min-width: 530px) {
+@media (max-width: 530px) {
   .page-banner__title {
     font-size: 5rem;
   }
@@ -178,7 +178,7 @@ Imaging with any questions regarding Web Fonts:  http://www.fonts.com
   line-height: 1.3;
   color: #ededed;
 }
-@media (min-width: 530px) {
+@media (max-width: 530px) {
   .page-banner__intro {
     font-size: 1.65rem;
   }

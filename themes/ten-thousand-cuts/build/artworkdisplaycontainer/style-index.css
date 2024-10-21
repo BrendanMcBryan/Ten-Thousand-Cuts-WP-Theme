@@ -1,1 +1,141 @@
-.wp-block-tenthousandcuts-artworkdisplaycontainer{background-color:#21759b;color:#fff;padding:2px}
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/artworkdisplaycontainer/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.glide {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+.glide * {
+  box-sizing: inherit;
+}
+.glide__track {
+  overflow: hidden;
+}
+.glide__slides {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  touch-action: pan-Y;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  will-change: transform;
+}
+.glide__slides--dragging {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.glide__slide {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  white-space: normal;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.glide__slide a {
+  -webkit-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.glide__arrows {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.glide__bullets {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.glide--rtl {
+  direction: rtl;
+}
+
+#homeSlide {
+  overflow: hidden;
+  display: flex;
+}
+
+.glide__track {
+  flex-grow: 1;
+}
+
+li.glide__slide {
+  height: 25vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  transition: all 3s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+li.glide__slide--active {
+  background-size: contain;
+}
+li.glide__slide img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  max-height: 25vh;
+}
+li.glide__slide a {
+  margin: 0px;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.slider__arrow {
+  margin: auto;
+  border: none;
+  color: white !important;
+  background-color: transparent;
+}
+
+.carousel {
+  margin-top: 0 !important;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 56vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin-right: 12px;
+}
+@media (max-width: 530px) {
+  .carousel-cell {
+    height: 56vh;
+    background-position: top center;
+  }
+}
+@media (max-width: 999px) {
+  .carousel-cell {
+    height: 60vh;
+    background-position: top center;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

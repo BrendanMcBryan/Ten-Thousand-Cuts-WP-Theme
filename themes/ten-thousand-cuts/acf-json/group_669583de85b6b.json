@@ -1,0 +1,105 @@
+{
+    "key": "group_669583de85b6b",
+    "title": "Series Fields",
+    "fields": [
+        {
+            "key": "field_669583deb4d49",
+            "label": "Series Title",
+            "name": "series_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "Name of Series",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66958414b4d4a",
+            "label": "Series Subtitle",
+            "name": "series_subtitle",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "If Series has subtitle enter it here",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6695845ef2407",
+            "label": "Series Date",
+            "name": "series_date",
+            "aria-label": "",
+            "type": "date_picker",
+            "instructions": "Roughly the Date of the series. only the year is really needed",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d\/m\/Y",
+            "return_format": "d\/m\/Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_669584abf2408",
+            "label": "Series Description",
+            "name": "series_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 5,
+            "placeholder": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "series"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 1,
+    "modified": 1729209093
+}

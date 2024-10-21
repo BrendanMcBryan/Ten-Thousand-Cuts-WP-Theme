@@ -268,6 +268,27 @@
             "rows": 4,
             "placeholder": "A description of the artowrk",
             "new_lines": "wpautop"
+        },
+        {
+            "key": "field_6712a23190dc7",
+            "label": "Featured",
+            "name": "featured",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Features this Artwork?",
+            "default_value": 1,
+            "allow_in_bindings": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
         }
     ],
     "location": [
@@ -288,5 +309,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1729208822
+    "modified": 1729274514
 }

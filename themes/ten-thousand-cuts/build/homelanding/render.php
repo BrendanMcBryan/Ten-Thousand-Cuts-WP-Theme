@@ -10,6 +10,7 @@ if (!isset($attributes['imgURL'])) {
 
   <div class="landing-page__content">
     <?php echo $content; ?>
+
   </div>
 
 </section>

@@ -94,7 +94,7 @@ function Edit({
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
         className: "landing-page__content",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, {
-          allowedBlocks: ['core/spacer', 'core/site-title', 'core/site-tagline', 'core/columns', 'core/buttons', 'tenthousandcuts/artworkdisplaycontainer']
+          allowedBlocks: ['core/spacer', 'core/site-title', 'core/site-tagline', 'core/columns', 'core/buttons', 'tenthousandcuts/artworkdisplaycontainer', 'tenthousandcuts/titleblock']
         })
       })]
     })]
