@@ -3,11 +3,6 @@
 <!-- JavaScript -->
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-<!-- CSS -->
-<link rel="stylesheet" href="https://unpkg.com/flickity-fade@2/flickity-fade.css">
-
-<!-- JS -->
-<script src="https://unpkg.com/flickity-fade@2/flickity-fade.js"></script>
 
 
 <div class="carousel">
@@ -32,11 +27,10 @@
 	while ($artwork->have_posts()) {
 		$artwork->the_post();
 	?>
-		<div class="carousel-cell" style="background-image: url('<?php echo get_field('hero_image') ?>');">
 
+		<a href="<?php echo get_permalink() ?>" class="carousel-cell" style="background-image: url('<?php echo get_field('hero_image') ?>');">
+		</a>
 
-
-		</div>
 	<?php
 	}
 
