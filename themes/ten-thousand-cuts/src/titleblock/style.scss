@@ -5,8 +5,95 @@
  * Replace them with your own styles or remove the file completely.
  */
 
+@import '../../assets/css/mixins';
+
 .wp-block-tenthousandcuts-titleblock {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+  // background-color: #21759b;
+  // color: #fff;
+  // padding: 2px;
+  z-index: 10;
+  .title_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__headlines {
+      white-space: nowrap;
+      // background-color: lightblue;
+      h1,
+      h2 {
+        font-family: var(--wp--preset--font-family--body);
+        font-weight: 100;
+        @include atLarge {
+          text-align: right;
+        }
+      }
+      h1 {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+      h2 {
+        font-size: var(--wp--preset--font-size--medium) !important;
+        color: var(--wp--preset--color--contrast-3) !important;
+      }
+    }
+
+    &__menu {
+      // background-color: red;
+      padding: 2px;
+      // width: 46px;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      text-align: right;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 3px;
+
+      &--burger {
+        cursor: pointer;
+        transition: all 0.5s;
+        font-size: var(--wp--preset--font-size--small);
+      }
+
+      &--dropdown {
+        z-index: 200;
+        // background-color: red;
+        // padding: 2px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        transition: all 1.5s;
+        transform: translateX(105%);
+        display: flex;
+        gap: 9px;
+        flex-direction: row;
+        text-align: right;
+        justify-content: flex-end;
+        align-items: end;
+
+        &--container {
+          overflow: hidden;
+        }
+      }
+    }
+
+    @include atLarge {
+      flex-direction: column;
+      align-items: end;
+    }
+
+    .menu_item {
+      // color: blue;
+      cursor: pointer;
+      font-family: var(--wp--preset--font-family--body);
+      font-weight: 100;
+
+      &_close {
+        font-size: var(--wp--preset--font-size--small);
+        padding-bottom: 1px;
+      }
+    }
+  }
 }

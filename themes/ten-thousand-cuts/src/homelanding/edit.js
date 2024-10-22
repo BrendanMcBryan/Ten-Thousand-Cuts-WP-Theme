@@ -85,6 +85,7 @@ export default function Edit({ attributes, setAttributes }) {
               'core/buttons',
               'tenthousandcuts/artworkdisplaycontainer',
               'tenthousandcuts/titleblock',
+              'tenthousandcuts/sitetitleblock',
             ]}
           />
         </div>

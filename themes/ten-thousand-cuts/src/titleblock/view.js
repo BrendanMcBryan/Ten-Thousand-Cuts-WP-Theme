@@ -1,25 +1,45 @@
-/**
- * Use this file for JavaScript code that you want to run in the front-end 
- * on posts/pages that contain this block.
- *
- * When this file is defined as the value of the `viewScript` property
- * in `block.json` it will be enqueued on the front end of the site.
- *
- * Example:
- *
- * ```js
- * {
- *   "viewScript": "file:./view.js"
- * }
- * ```
- *
- * If you're not making any changes to this file because your project doesn't need any 
- * JavaScript running in the front-end, then you should delete this file and remove 
- * the `viewScript` property from `block.json`. 
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#view-script
- */
- 
-/* eslint-disable no-console */
-console.log("Hello World! (from tenthousandcuts-titleblock block)");
-/* eslint-enable no-console */
+import { store } from '@wordpress/interactivity';
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+const menuBurger = document.querySelector('.title_block__menu--burger');
+const menu = document.querySelector('.title_block__menu--dropdown');
+
+menuBurger.addEventListener('click', (event) => {
+  // menu.style.display = 'block';
+});
+// menuBurger.addEventListener('mouseout', (event) => {
+//   menu.style.display = 'none';
+// });
+
+store('tenthousandcuts', {
+  actions: {
+    toggleMenu: () => {
+      console.log('toggle the Menu!');
+      let sideMenu = document.querySelector('.title_block__menu--dropdown');
+      let hamburger = document.querySelector('#menuBurger');
+      let closeButton = document.querySelector('#CloseMenu');
+
+      sideMenu.style.transform = 'translate(0%)';
+      hamburger.style.opacity = '0';
+
+      document.addEventListener('click', (event) => {
+        const isClickInside = sideMenu.contains(event.target);
+        const isClickHamburger = hamburger.contains(event.target);
+        const isClickClose = closeButton.contains(event.target);
+        if ((!isClickInside && !isClickHamburger) || isClickClose) {
+          sideMenu.style.transform = 'translate(105%)';
+          hamburger.style.opacity = '1';
+        }
+        // if ((!isClickInside && !isClickHamburger) || isClickClose) {
+        //   sideMenu.style.transform = 'translate(105%)';
+        // }
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.keyCode == 27) {
+          sideMenu.style.transform = 'translate(105%)';
+        }
+      });
+    },
+  },
+});
