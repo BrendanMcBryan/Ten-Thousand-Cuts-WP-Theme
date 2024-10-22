@@ -83,15 +83,14 @@
 
 li.glide__slide {
   height: 25vh;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   overflow: hidden;
   transition: all 3s;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 li.glide__slide--active {
-  background-size: contain;
+  background-position: bottom center;
 }
 li.glide__slide img {
   -o-object-fit: contain;
@@ -115,6 +114,7 @@ li.glide__slide a {
 
 .carousel {
   margin-top: 0 !important;
+  background: red;
 }
 
 .carousel-cell {

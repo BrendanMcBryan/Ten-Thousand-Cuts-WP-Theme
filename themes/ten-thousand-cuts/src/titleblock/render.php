@@ -15,7 +15,7 @@
 			<div class="title_block__menu--dropdown--container">
 				<div class="title_block__menu--dropdown">
 					<div class="menu_item menu_item_shop">shop</div>
-					<div class="menu_item menu_item_archives">archives</div>
+					<a href="/artwork" class="menu_item menu_item_archives">archives</a>
 					<div class="menu_item menu_item_close" id="CloseMenu"><i class="fa-solid fa-circle-half-stroke"></i></div>
 				</div>
 

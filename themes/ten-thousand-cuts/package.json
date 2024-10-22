@@ -20,8 +20,6 @@
   "dependencies": {
     "@glidejs/glide": "^3.6.1",
     "@wordpress/components": "^28.5.0",
-    "animate.css": "^4.1.1",
-    "flickity": "^3.0.0",
-    "masonry-layout": "^4.2.2"
+    "animate.css": "^4.1.1"
   }
 }

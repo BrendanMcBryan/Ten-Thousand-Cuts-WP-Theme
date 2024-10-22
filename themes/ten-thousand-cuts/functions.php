@@ -218,7 +218,6 @@ function ten_thousand_cuts_files()
 	wp_enqueue_style('ten_thousand_cuts_extra_styles', get_theme_file_uri('/build/index.css'));
 	wp_enqueue_style('Font_Awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
 
-	// wp_enqueue_style('custom-google-fonts', 'https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
 	wp_localize_script('main-ten_thousand_cuts-js', 'tenThousandCutsData', array(
 		'root_url' => get_site_url(),
 		'nonce' => wp_create_nonce('wp_rest')
