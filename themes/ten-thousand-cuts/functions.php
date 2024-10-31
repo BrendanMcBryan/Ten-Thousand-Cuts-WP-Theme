@@ -214,8 +214,8 @@ add_action('init', 'ten_thousand_cuts_pattern_categories');
 
 function ten_thousand_cuts_files()
 {
-	wp_enqueue_style('ten_thousand_cuts_main_styles', get_theme_file_uri('/build/style-index.css'));
-	wp_enqueue_style('ten_thousand_cuts_extra_styles', get_theme_file_uri('/build/index.css'));
+	wp_enqueue_style('ten_thousand_cuts_main_styles',  get_theme_file_uri('/build/style-index.css'), array(), rand(111, 9999), 'all');
+	wp_enqueue_style('ten_thousand_cuts_extra_styles', get_theme_file_uri('/build/index.css'), array(), rand(111, 9999), 'all');
 	wp_enqueue_style('Font_Awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
 
 	wp_localize_script('main-ten_thousand_cuts-js', 'tenThousandCutsData', array(
@@ -250,8 +250,9 @@ function ten_thousand_cuts_blocks()
 	register_block_type_from_metadata(__DIR__ . '/build/homelanding');
 	register_block_type_from_metadata(__DIR__ . '/build/artworkdisplaycontainer');
 	register_block_type_from_metadata(__DIR__ . '/build/titleblock');
-
 	register_block_type_from_metadata(__DIR__ . '/build/singleartwork');
+	register_block_type_from_metadata(__DIR__ . '/build/masonrygridshow');
+	register_block_type_from_metadata(__DIR__ . '/build/artworkcarousel');
 }
 
 add_action('init', 'ten_thousand_cuts_blocks');

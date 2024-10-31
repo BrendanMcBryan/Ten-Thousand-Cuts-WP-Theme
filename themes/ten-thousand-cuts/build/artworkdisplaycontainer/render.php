@@ -1,5 +1,5 @@
 <div class="glide" id="homeSlide">
-	<button id="prev" class="glide__arrow slider__arrow glide__arrow--left" data-glide-dir="&lt;">&#8880;</button>
+	<!-- <button id="prev" class="glide__arrow slider__arrow glide__arrow--left" data-glide-dir="&lt;">&#8880;</button> -->
 
 	<div class="glide__track" data-glide-el="track">
 
@@ -24,7 +24,6 @@
 
 			));
 
-
 			while ($artwork->have_posts()) {
 				$artwork->the_post();
 			?>
@@ -40,11 +39,11 @@
 			?>
 
 		</ul>
-	</div>
-	<button id="next" class="slider__arrow slider__arrow--next glide__arrow glide__arrow--next" data-glide-dir="&gt;">
+		<!-- </div> -->
+		<!-- <button id="next" class="slider__arrow slider__arrow--next glide__arrow glide__arrow--next" data-glide-dir="&gt;">
 		&#8881;
 
-	</button>
+	</button> -->
 
 
-</div>
+	</div>

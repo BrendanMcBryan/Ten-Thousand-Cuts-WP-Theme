@@ -20,6 +20,10 @@
   "dependencies": {
     "@glidejs/glide": "^3.6.1",
     "@wordpress/components": "^28.5.0",
-    "animate.css": "^4.1.1"
+    "animate.css": "^4.1.1",
+    "imagesloaded": "^5.0.0",
+    "masonry-layout": "^4.2.2",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.1.14"
   }
 }

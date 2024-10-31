@@ -82,15 +82,16 @@
 }
 
 li.glide__slide {
-  height: 25vh;
-  background-size: cover;
+  height: 55vh;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top left;
   overflow: hidden;
-  transition: all 3s;
 }
-li.glide__slide--active {
-  background-position: bottom center;
+@media (max-width: 999px) {
+  li.glide__slide {
+    background-position: top center;
+  }
 }
 li.glide__slide img {
   -o-object-fit: contain;
@@ -110,32 +111,6 @@ li.glide__slide a {
   border: none;
   color: white !important;
   background-color: transparent;
-}
-
-.carousel {
-  margin-top: 0 !important;
-  background: red;
-}
-
-.carousel-cell {
-  width: 100%;
-  height: 56vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top center;
-  margin-right: 12px;
-}
-@media (max-width: 530px) {
-  .carousel-cell {
-    height: 56vh;
-    background-position: top center;
-  }
-}
-@media (max-width: 999px) {
-  .carousel-cell {
-    height: 60vh;
-    background-position: top center;
-  }
 }
 
 /*# sourceMappingURL=style-index.css.map*/

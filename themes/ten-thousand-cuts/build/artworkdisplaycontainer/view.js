@@ -3973,8 +3973,10 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _glidejs_glide__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @glidejs/glide */ "./node_modules/@glidejs/glide/dist/glide.esm.js");
 
-var nextButton = document.querySelector('#next');
-var prevButton = document.querySelector('#prev');
+
+// var nextButton = document.querySelector('#next');
+// var prevButton = document.querySelector('#prev');
+
 const randomStart = Math.floor(Math.random() * 10 + 1);
 //random number between 1 and 10.
 
@@ -3984,48 +3986,34 @@ var glide = new _glidejs_glide__WEBPACK_IMPORTED_MODULE_0__["default"]('#homeSli
   focusAt: 'center',
   hoverpause: true,
   startAt: randomStart,
-  autoplay: 2 * 1000,
-  animationDuration: 10 * 1000,
+  autoplay: 4 * 1000,
+  animationDuration: 5 * 1000,
   animationTimingFunc: 'ease-in-out',
   rewind: true,
-  rewindDuration: 10 * 1000,
+  rewindDuration: 5 * 1000,
   breakpoints: {
-    800: {
-      perView: 2
+    1000: {
+      perView: 1
     },
-    480: {
+    530: {
       perView: 1
     }
   }
 });
-nextButton.addEventListener('click', function (event) {
-  event.preventDefault();
-  glide.go('>');
-});
-prevButton.addEventListener('click', function (event) {
-  event.preventDefault();
-  glide.go('<');
-});
-glide.mount();
 
-// var elem = document.querySelector('.carousel');
-// var flkty = new Flickity(elem, {
-//   // options
-//   imagesLoaded: true,
-//   percentPosition: true,
-//   freeScroll: true,
-//   wrapAround: true,
-//   autoPlay: 16 * 1000,
-//   pauseAutoPlayOnHover: false,
-//   prevNextButtons: false,
-//   pageDots: false,
-//   // fade: true,
-//   // adaptiveHeight: true,
-//   freeScroll: true,
-//   freeScrollFriction: 0.03,
-//   selectedAttraction: 0.01,
-//   friction: 0.1,
+// nextButton.addEventListener('click', function (event) {
+//   event.preventDefault();
+
+//   glide.go('>');
 // });
+
+// prevButton.addEventListener('click', function (event) {
+//   event.preventDefault();
+
+//   glide.go('<');
+// });
+
+glide.mount();
 })();
 
 /******/ })()
