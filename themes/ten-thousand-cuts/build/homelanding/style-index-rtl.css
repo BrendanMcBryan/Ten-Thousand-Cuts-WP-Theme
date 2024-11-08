@@ -129,21 +129,21 @@ Imaging with any questions regarding Web Fonts:  http://www.fonts.com
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 26vh;
-}
-@media (max-width: 530px) {
-  .landing-page {
-    padding-top: 10vh;
-  }
-}
-@media (max-width: 999px) {
-  .landing-page {
-    padding-top: 10vh;
-  }
 }
 .landing-page__content {
   width: 80%;
   max-width: 900px;
+  margin-top: 26vh;
+}
+@media (max-width: 530px) {
+  .landing-page__content {
+    margin-top: 13vh;
+  }
+}
+@media (max-width: 999px) {
+  .landing-page__content {
+    margin-top: 13vh;
+  }
 }
 
 @media (min-width: 1000px) {

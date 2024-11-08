@@ -33,29 +33,30 @@ $date = date_create(get_field('date_completed'));
 		</div>
 
 		<div class="single-artwork__info">
+			<div class="artworkinfo-block">
+				<h5><?php echo date_format($date, "Y") ?> </h5>
 
-			<h1><?php echo get_field('title') ?></h1>
-			<?php
-			if (get_field('subtitle')) {
+				<h1><?php echo get_field('title') ?></h1>
+				<?php
+				if (get_field('subtitle')) {
 
-			?> <h2><?php echo get_field('subtitle') ?> </h2>
-			<?php }
+				?> <h2><?php echo get_field('subtitle') ?> </h2>
+				<?php }
 
-			?>
-
-			<h5><?php echo date_format($date, "Y") ?> </h5>
-			<p class="info"><?php echo get_field('width') ?>" &times; <?php echo get_field('height') ?>"</p>
-			<p><?php echo get_field('materials') ?></p>
-			<?php
-			if (get_field('description')) {
-
-			?> <p class="description"><?php echo get_field('description') ?> </p>
-			<?php }
-
-			?>
+				?>
 
 
-			<div class="pagination mt50">
+				<p class="info"><?php echo get_field('width') ?>" &times; <?php echo get_field('height') ?>" <span class="seperator">|</span> <?php echo get_field('materials') ?></p>
+				<hr>
+				<?php
+				if (get_field('description')) {
+
+				?> <p class="description"><?php echo get_field('description') ?> </p>
+				<?php }
+
+				?>
+			</div>
+			<div class="pagination">
 				<small class="page-item">
 					<?php previous_post_link('%link', ' <i class="fas fa-arrow-left"></i> %title'); ?>
 				</small>

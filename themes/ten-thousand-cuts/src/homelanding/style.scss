@@ -20,18 +20,20 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 26vh;
-
-  @include atSmall {
-    padding-top: 10vh;
-  }
-  @include atMedium {
-    padding-top: 10vh;
-  }
+  // padding-top: 26vh;
 
   &__content {
     width: 80%;
     max-width: 900px;
+    margin-top: 26vh;
+
+    @include atSmall {
+      margin-top: 13vh;
+    }
+    @include atMedium {
+      margin-top: 13vh;
+    }
+
     // position: relative;
     // display: flex;
     // flex-direction: column;

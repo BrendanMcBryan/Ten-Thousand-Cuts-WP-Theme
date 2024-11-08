@@ -251,8 +251,7 @@ function ten_thousand_cuts_blocks()
 	register_block_type_from_metadata(__DIR__ . '/build/artworkdisplaycontainer');
 	register_block_type_from_metadata(__DIR__ . '/build/titleblock');
 	register_block_type_from_metadata(__DIR__ . '/build/singleartwork');
-	register_block_type_from_metadata(__DIR__ . '/build/masonrygridshow');
-	register_block_type_from_metadata(__DIR__ . '/build/artworkcarousel');
+	register_block_type_from_metadata(__DIR__ . '/build/artworkgallery');
 }
 
 add_action('init', 'ten_thousand_cuts_blocks');

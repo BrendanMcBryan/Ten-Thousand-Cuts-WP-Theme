@@ -6,6 +6,8 @@
  */
 
 .single-artwork__container {
+  margin: auto;
+  max-width: var(--wp--style--global--wide-size);
   img {
     width: 100%;
   }
@@ -17,15 +19,25 @@
 .single-artwork__inner {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 .single-artwork__info {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
+  hr {
+    margin-top: var(--wp--preset--spacing--10);
+    margin-bottom: var(--wp--preset--spacing--20);
+    opacity: 0.2;
+    border-color: var(--wp--preset--color--accent-2);
+    width: 80%;
+    margin-right: auto;
+  }
   h1,
   h2,
   h5 {
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
     margin-top: 0;
   }
   h2 {
@@ -34,19 +46,21 @@
   h5 {
     margin-bottom: 0.5rem;
     font-family: var(--wp--preset--font-family--marcellus);
-    font-size: var(--wp--preset--font-size--large);
+    font-size: var(--wp--preset--font-size--small);
     font-weight: 200;
 
     color: var(--wp--preset--color--accent-2);
   }
   p {
-    margin-top: 0;
+    margin-top: 0.5rem;
     margin-bottom: 0;
     font-size: var(--wp--preset--font-size--small);
     font-weight: 100;
     font-family: var(--wp--preset--font-family--body);
     color: var(--wp--preset--color--contrast-1);
-
+    span.seperator {
+      color: var(--wp--preset--color--accent-5);
+    }
     &.description {
       height: 18vh;
       margin-bottom: 1rem;
@@ -73,6 +87,7 @@
   }
 
   .pagination {
+    margin-top: auto;
     display: flex;
     justify-content: space-between;
     a {
