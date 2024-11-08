@@ -70,12 +70,6 @@
 .wp-block-tenthousandcuts-titleblock .title_block__menu--dropdown--container {
   overflow: hidden;
 }
-@media (min-width: 780px) {
-  .wp-block-tenthousandcuts-titleblock .title_block {
-    flex-direction: column;
-    align-items: end;
-  }
-}
 .wp-block-tenthousandcuts-titleblock .title_block .menu_item {
   cursor: pointer;
   font-family: var(--wp--preset--font-family--body);
@@ -84,6 +78,18 @@
 .wp-block-tenthousandcuts-titleblock .title_block .menu_item_close {
   font-size: var(--wp--preset--font-size--small);
   padding-bottom: 1px;
+}
+@media (max-width: 999px) {
+  .wp-block-tenthousandcuts-titleblock .title_block {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+}
+@media (min-width: 780px) {
+  .wp-block-tenthousandcuts-titleblock .title_block {
+    flex-direction: column;
+    align-items: end;
+  }
 }
 
 header > div > .wp-block-tenthousandcuts-titleblock > .title_block {
