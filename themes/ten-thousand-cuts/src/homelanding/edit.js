@@ -86,8 +86,7 @@ export default function Edit({ attributes, setAttributes }) {
               'tenthousandcuts/artworkdisplaycontainer',
               'tenthousandcuts/titleblock',
               'tenthousandcuts/sitetitleblock',
-              'tenthousandcuts/masonrygridshow',
-              'tenthousandcuts/artworkcarousel',
+              'tenthousandcuts/artworkgallery',
             ]}
           />
         </div>
