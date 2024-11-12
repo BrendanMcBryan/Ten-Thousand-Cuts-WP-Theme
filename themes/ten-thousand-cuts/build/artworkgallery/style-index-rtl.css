@@ -18,8 +18,8 @@ img {
 }
 
 .artgrid {
-  -moz-columns: 3;
-       columns: 3;
+  -moz-columns: 5;
+       columns: 5;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
   -moz-column-fill: balance;
