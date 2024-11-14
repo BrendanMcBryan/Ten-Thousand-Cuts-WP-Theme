@@ -6,7 +6,7 @@ import Glide from '@glidejs/glide';
 const randomStart = Math.floor(Math.random() * 10 + 1);
 //random number between 1 and 10.
 
-var glide = new Glide('#homeSlide', {
+var glide = new Glide('#artworkSlideshow', {
   type: 'carousel',
   perView: 1,
   focusAt: 'center',
@@ -16,7 +16,7 @@ var glide = new Glide('#homeSlide', {
   animationDuration: 5 * 1000,
   animationTimingFunc: 'ease-in-out',
   rewind: true,
-  rewindDuration: 5 * 1000,
+  rewindDuration: 15 * 1000,
   breakpoints: {
     1000: {
       perView: 1,

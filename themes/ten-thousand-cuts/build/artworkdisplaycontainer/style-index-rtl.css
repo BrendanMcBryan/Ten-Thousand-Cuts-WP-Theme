@@ -72,7 +72,7 @@
   direction: ltr;
 }
 
-#homeSlide {
+#artworkSlideshow {
   overflow: hidden;
   display: flex;
   max-width: var(--wp--style--global--wide-size);
@@ -84,17 +84,45 @@
   flex-grow: 1;
 }
 
-li.glide__slide {
+.art {
   height: 55vh;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center top;
   overflow: hidden;
   transition: all 3s;
+  background-repeat: no-repeat;
 }
-li.glide__slide:hover {
-  background-size: 115%;
+.art__tall {
+  background-size: 40%;
+  background-position: center top;
 }
+.art__tall:hover {
+  background-size: 20%;
+  background-position: center bottom;
+}
+.art__portrait {
+  background-size: 100%;
+  background-position: center top;
+}
+.art__portrait:hover {
+  background-size: 85%;
+  background-position: center top;
+}
+.art__landscape {
+  background-size: 100%;
+  background-position: center top;
+}
+.art__landscape:hover {
+  background-size: 90%;
+  background-position: center top;
+}
+.art__wide {
+  background-size: 100%;
+  background-position: center top;
+}
+.art__wide:hover {
+  background-size: 120%;
+  background-position: center top;
+}
+
 @media (max-width: 999px) {
   li.glide__slide {
     background-position: top center;

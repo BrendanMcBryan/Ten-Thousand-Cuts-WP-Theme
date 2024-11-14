@@ -8,7 +8,7 @@
 
 @import '../../assets/css/mixins';
 
-#homeSlide {
+#artworkSlideshow {
   // height: 100vh !important;
   // padding: 15vh 10%;
   overflow: hidden;
@@ -23,14 +23,48 @@
 .glide__track {
   flex-grow: 1;
 }
-li.glide__slide {
+
+.art {
   height: 55vh;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center top;
+
   overflow: hidden;
   transition: all 3s;
+  background-repeat: no-repeat;
 
+  &__tall {
+    background-size: 40%;
+    background-position: center top;
+    &:hover {
+      background-size: 20%;
+      background-position: center bottom;
+    }
+  }
+  &__portrait {
+    background-size: 100%;
+    background-position: center top;
+    &:hover {
+      background-size: 85%;
+      background-position: center top;
+    }
+  }
+  &__landscape {
+    background-size: 100%;
+    background-position: center top;
+    &:hover {
+      background-size: 90%;
+      background-position: center top;
+    }
+  }
+  &__wide {
+    background-size: 100%;
+    background-position: center top;
+    &:hover {
+      background-size: 120%;
+      background-position: center top;
+    }
+  }
+}
+li.glide__slide {
   // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   // &--active {
   // background-position: bottom right;
@@ -38,7 +72,7 @@ li.glide__slide {
   // background-size: contain;
   // }
   &:hover {
-    background-size: 115%;
+    // background-size: 150%;
   }
   @include atMedium {
     background-position: top center;
