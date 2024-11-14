@@ -30,7 +30,10 @@
 
 
 				<li class="glide__slide" style="background-image: url(<?php echo get_field('hero_image') ?>);">
-					<a href="<?php echo get_the_permalink() ?>"></a>
+					<a href="<?php echo get_the_permalink() ?>">
+						<!-- <img src="<?php echo get_field('hero_image') ?>" alt=""> -->
+
+					</a>
 				</li>
 
 			<?php
