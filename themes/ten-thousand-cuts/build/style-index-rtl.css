@@ -1648,3 +1648,9 @@ body,
 .scaleOnHoverSmall:hover {
   scale: 1.1;
 }
+
+html,
+body {
+  height: auto;
+  min-height: 100vh;
+}

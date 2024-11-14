@@ -5,9 +5,6 @@
 
 		<ul class="glide__slides">
 
-
-
-
 			<?php
 			$artwork = new WP_Query(array(
 				'post_type' => 'artwork',
@@ -20,16 +17,20 @@
 						// 'type' => 'numeric'
 					)
 				)
-
-
 			));
 
 			while ($artwork->have_posts()) {
 				$artwork->the_post();
+
 				list($width, $height, $type, $attr) = getimagesize(get_field('hero_image'));
 				$aspectratio = $width / $height;
 				switch ($aspectratio) {
+						// * very tall images
+					case $aspectratio < .33:
+						$frameclass = "art__verytall";
+						break;
 						// * tall images
+
 					case $aspectratio < .8:
 						$frameclass = "art__tall";
 						break;
@@ -57,7 +58,6 @@
 
 				<li class="glide__slide art <?php echo $frameclass ?>" style="background-image: url(<?php echo get_field('hero_image') ?>);">
 					<a href="<?php echo get_the_permalink() ?>">
-						<!-- <img src="<?php echo get_field('hero_image') ?>" alt=""> -->
 
 					</a>
 				</li>

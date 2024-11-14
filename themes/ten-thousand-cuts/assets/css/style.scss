@@ -11,3 +11,9 @@
 @import './base';
 @import './mixins';
 @import './helpers';
+
+html,
+body {
+  height: auto;
+  min-height: 100vh;
+}
