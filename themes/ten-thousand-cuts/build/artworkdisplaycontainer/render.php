@@ -1,4 +1,4 @@
-<div class="glide" id="homeSlide">
+<div class="glide alignwide" id="homeSlide">
 	<!-- <button id="prev" class="glide__arrow slider__arrow glide__arrow--left" data-glide-dir="&lt;">&#8880;</button> -->
 
 	<div class="glide__track" data-glide-el="track">

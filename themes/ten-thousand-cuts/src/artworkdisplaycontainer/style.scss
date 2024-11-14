@@ -13,7 +13,9 @@
   // padding: 15vh 10%;
   overflow: hidden;
   display: flex;
-
+  max-width: var(--wp--style--global--wide-size);
+  margin-left: auto;
+  margin-right: auto;
   // flex-direction: column;
   // justify-content: center;
 }
@@ -23,11 +25,11 @@
 }
 li.glide__slide {
   height: 55vh;
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: center top;
   overflow: hidden;
-  // transition: all 3s;
+  transition: all 3s;
 
   // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   // &--active {
@@ -35,6 +37,9 @@ li.glide__slide {
   // background-position: bottom center;
   // background-size: contain;
   // }
+  &:hover {
+    background-size: 115%;
+  }
   @include atMedium {
     background-position: top center;
   }

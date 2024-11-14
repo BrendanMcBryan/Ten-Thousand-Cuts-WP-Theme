@@ -75,6 +75,9 @@
 #homeSlide {
   overflow: hidden;
   display: flex;
+  max-width: var(--wp--style--global--wide-size);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .glide__track {
@@ -83,10 +86,14 @@
 
 li.glide__slide {
   height: 55vh;
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: center top;
   overflow: hidden;
+  transition: all 3s;
+}
+li.glide__slide:hover {
+  background-size: 115%;
 }
 @media (max-width: 999px) {
   li.glide__slide {
