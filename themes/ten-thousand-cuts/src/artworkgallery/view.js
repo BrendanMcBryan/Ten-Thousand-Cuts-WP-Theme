@@ -1,5 +1,5 @@
 // import Glide, { Controls } from '@glidejs/glide';
-import Splide from '@splidejs/splide';
+// import Splide from '@splidejs/splide';
 // // var nextButton = document.querySelector('#next');
 // // var prevButton = document.querySelector('#prev');
 
@@ -25,15 +25,15 @@ import Splide from '@splidejs/splide';
 // //   glide.go('<');
 // // });
 
-// glide.mount();
+// // glide.mount();
 
-var splide = new Splide('.splide', {
-  perPage: 2,
-  type: 'loop',
-  height: '68vh',
+// var splide = new Splide('.splide', {
+//   perPage: 2,
+//   type: 'loop',
+//   height: '68vh',
 
-  focus: 'center',
-  autoWidth: true,
-});
+//   focus: 'center',
+//   autoWidth: true,
+// });
 
-splide.mount();
+// splide.mount();

@@ -3,10 +3,10 @@
   "apiVersion": 3,
   "name": "tenthousandcuts/artworkdisplaycontainer",
   "version": "0.1.0",
-  "title": "Artwork Display",
+  "title": "Artwork Slider Display",
   "category": "theme",
   "icon": "format-gallery",
-  "description": "Block to control main Display container for artowork",
+  "description": "Block to to display featured artwork as a slide show",
   "example": {},
   "supports": {
     "html": false
