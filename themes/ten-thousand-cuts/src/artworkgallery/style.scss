@@ -21,9 +21,11 @@ img {
 
 .artgrid {
   overflow: visible;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  // background-color: lightpink;
+  // max-height: 54vh;
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
 
   /* ! Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
@@ -35,6 +37,18 @@ img {
   }
 
   &__strip {
+    width: 100%;
+    // background-color: chartreuse;
+    columns: 4;
+    column-gap: 1em;
+    @include atMedium {
+      columns: 3;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    @include atSmall {
+      columns: 2;
+    }
   }
   &__art {
     width: 50px;
@@ -56,15 +70,6 @@ img {
       bottom: 0;
       right: 0;
     }
-  }
-
-  @include atMedium {
-    // columns: 2;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-  @include atSmall {
-    // columns: 1;
   }
 
   @for $i from 1 through 36 {
@@ -102,8 +107,8 @@ img {
     }
   }
   &__portrait {
-    max-width: 20%;
-    height: 40vh;
+    // max-width: 20%;
+    height: 30vh;
   }
   &__landscape {
     height: 12vh;
@@ -118,6 +123,8 @@ img {
   &__wide {
     height: 6vh;
     &:hover {
+      background-position: bottom right;
+
       background-size: 180%;
     }
     @include atSmall {

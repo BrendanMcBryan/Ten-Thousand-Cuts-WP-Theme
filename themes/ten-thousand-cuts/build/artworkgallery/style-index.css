@@ -80,9 +80,6 @@
 
 .artgrid {
   overflow: visible;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   /* ! Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -90,6 +87,27 @@
 }
 .artgrid::-webkit-scrollbar {
   display: none;
+}
+.artgrid__strip {
+  width: 100%;
+  -moz-columns: 4;
+       columns: 4;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+}
+@media (max-width: 999px) {
+  .artgrid__strip {
+    -moz-columns: 3;
+         columns: 3;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+@media (max-width: 530px) {
+  .artgrid__strip {
+    -moz-columns: 2;
+         columns: 2;
+  }
 }
 .artgrid__art {
   width: 50px;
@@ -111,12 +129,6 @@
   left: 0;
   bottom: 0;
   right: 0;
-}
-@media (max-width: 999px) {
-  .artgrid {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
 }
 .art {
   background-size: cover;
@@ -147,8 +159,7 @@
   }
 }
 .art__portrait {
-  max-width: 20%;
-  height: 40vh;
+  height: 30vh;
 }
 .art__landscape {
   height: 12vh;
@@ -166,6 +177,7 @@
   height: 6vh;
 }
 .art__wide:hover {
+  background-position: bottom right;
   background-size: 180%;
 }
 @media (max-width: 530px) {
