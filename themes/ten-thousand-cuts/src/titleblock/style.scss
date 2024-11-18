@@ -19,6 +19,7 @@
 
     &__headlines {
       white-space: nowrap;
+      text-decoration: none;
       // background-color: lightblue;
       h1,
       h2 {
@@ -34,6 +35,9 @@
       h2 {
         font-size: var(--wp--preset--font-size--medium) !important;
         color: var(--wp--preset--color--contrast-3) !important;
+      }
+      a {
+        text-decoration: none;
       }
     }
 
@@ -81,9 +85,13 @@
 
     .menu_item {
       // color: blue;
+      text-decoration: none;
       cursor: pointer;
       font-family: var(--wp--preset--font-family--body);
       font-weight: 100;
+      &:hover {
+        font-weight: 300;
+      }
 
       &_close {
         font-size: var(--wp--preset--font-size--small);
