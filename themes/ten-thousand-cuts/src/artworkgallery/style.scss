@@ -70,6 +70,18 @@ img {
       bottom: 0;
       right: 0;
     }
+
+    &__title {
+      // background-color: red;
+      color: white;
+      font-size: var(--wp--preset--font-size--medium);
+      text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 0 0 3px 3px;
+      margin: 0;
+    }
   }
 
   @for $i from 1 through 36 {

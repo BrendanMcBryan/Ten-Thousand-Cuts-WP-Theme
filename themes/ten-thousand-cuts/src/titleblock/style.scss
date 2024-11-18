@@ -84,13 +84,17 @@
     }
 
     .menu_item {
-      // color: blue;
       text-decoration: none;
       cursor: pointer;
       font-family: var(--wp--preset--font-family--body);
       font-weight: 100;
       &:hover {
         font-weight: 300;
+      }
+
+      &:focus {
+        border: none !important;
+        outline: none !important;
       }
 
       &_close {

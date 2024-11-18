@@ -52,7 +52,7 @@ $date = date_create(get_field('date_completed'));
 		<div class="single-artwork__info">
 			<div class="artworkinfo-block">
 				<h5><?php echo date_format($date, "Y") ?> </h5>
-				<h5><?php echo $aspectratio ?></h5>
+
 
 				<h1><?php echo get_field('title') ?></h1>
 				<?php

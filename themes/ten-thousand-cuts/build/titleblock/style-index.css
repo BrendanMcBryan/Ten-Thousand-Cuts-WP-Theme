@@ -83,6 +83,10 @@
 .wp-block-tenthousandcuts-titleblock .title_block .menu_item:hover {
   font-weight: 300;
 }
+.wp-block-tenthousandcuts-titleblock .title_block .menu_item:focus {
+  border: none !important;
+  outline: none !important;
+}
 .wp-block-tenthousandcuts-titleblock .title_block .menu_item_close {
   font-size: var(--wp--preset--font-size--small);
   padding-bottom: 1px;

@@ -1649,6 +1649,10 @@ body,
   scale: 1.1;
 }
 
+ul.art-post-template {
+  background-color: red;
+}
+
 html,
 body {
   height: auto;

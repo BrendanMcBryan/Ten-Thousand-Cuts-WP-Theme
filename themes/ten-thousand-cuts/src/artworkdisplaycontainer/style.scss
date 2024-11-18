@@ -22,6 +22,7 @@
 
 .art {
   height: 55vh;
+
   overflow: hidden;
   transition: all 3s;
   background-repeat: no-repeat;
@@ -30,28 +31,36 @@
     width: 100%;
     height: 100%;
   }
-  &__tall {
+  &__verytall {
     background-size: 40%;
-    background-position: center top;
+    background-position: top left;
     &:hover {
       background-size: 20%;
-      background-position: center bottom;
+      // background-position: center bottom;
+    }
+  }
+  &__tall {
+    background-size: 35%;
+    background-position: left center;
+    &:hover {
+      background-size: 25%;
+      background-position: top left;
     }
   }
   &__portrait {
-    background-size: 100%;
-    background-position: center top;
+    background-size: 75%;
+    background-position: left center;
     &:hover {
-      background-size: 85%;
-      background-position: center top;
+      background-size: 60%;
+      background-position: top left;
     }
   }
   &__landscape {
-    background-size: 100%;
+    background-size: 120%;
     background-position: center top;
     &:hover {
       background-size: 90%;
-      background-position: center top;
+      background-position: top left;
     }
   }
   &__wide {
