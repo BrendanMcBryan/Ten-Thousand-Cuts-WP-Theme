@@ -30,9 +30,9 @@ import './editor.scss';
  * @return {Element} Element to render.
  */
 export default function Edit() {
-	return (
-		<p { ...useBlockProps() }>
-			{ __( 'Artworkgallery – hello from the editor!', 'artworkgallery' ) }
-		</p>
-	);
+  return (
+    <p {...useBlockProps()}>
+      {__('Artwork Gallery - Shows random grid of Artwork posts')}
+    </p>
+  );
 }
