@@ -8,7 +8,8 @@
 			<?php
 			$artwork = new WP_Query(array(
 				'post_type' => 'artwork',
-				'order' => 'rand',
+				'order' => 'ASC',
+				'orderby' => 'rand',
 				'meta_query' => array(
 					array(
 						'key' => 'featured',

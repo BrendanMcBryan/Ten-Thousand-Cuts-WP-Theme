@@ -8,7 +8,8 @@
 			'post_type' => 'artwork',
 
 			// 'posts_per_page' => -1,
-			'order' => 'rand',
+			'order' => 'ASC',
+			'orderby' => 'rand',
 			'meta_query' => array(
 				array(
 					'key' => 'featured',

@@ -1,1 +1,155 @@
-.has-white-color{color:#fff!important}.has-white-background-color,.is-style-outline .has-white-color:active,.is-style-outline .has-white-color:hover,a.has-white-background-color:active,a.has-white-background-color:hover{background-color:#fff}.has-gray-color{color:#99999a!important}.has-gray-background-color{background-color:#99999a}a.has-gray-background-color:active,a.has-gray-background-color:hover{background-color:#b3b3b3}.is-style-outline .has-gray-color:active,.is-style-outline .has-gray-color:hover{background-color:#fff}.has-light-gray-color{color:#d9d9d9!important}.has-light-gray-background-color{background-color:#d9d9d9}a.has-light-gray-background-color:active,a.has-light-gray-background-color:hover{background-color:#f3f3f3}.is-style-outline .has-light-gray-color:active,.is-style-outline .has-light-gray-color:hover{background-color:#fff}.has-dark-gray-color{color:#1d1d21!important}.has-dark-gray-background-color{background-color:#1d1d21}a.has-dark-gray-background-color:active,a.has-dark-gray-background-color:hover{background-color:#35353c}.is-style-outline .has-dark-gray-color:active,.is-style-outline .has-dark-gray-color:hover{background-color:#b3b3bd}.has-black-color{color:#000!important}.has-black-background-color{background-color:#000}a.has-black-background-color:active,a.has-black-background-color:hover{background-color:#1a1a1a}.is-style-outline .has-black-color:active,.is-style-outline .has-black-color:hover{background-color:#999}.has-gold-color{color:#a3905e!important}.has-gold-background-color{background-color:#a3905e}a.has-gold-background-color:active,a.has-gold-background-color:hover{background-color:#b6a67e}.is-style-outline .has-gold-color:active,.is-style-outline .has-gold-color:hover{background-color:#fff}.heading{font-family:Bodoni Moda,serif;font-weight:400}.text-shadow{text-shadow:1px 1px 10px #000}.landing-page{align-items:flex-start;background-attachment:fixed;background-position:50%;background-repeat:no-repeat;background-size:cover;bottom:0;display:flex;height:100vh;justify-content:center;left:0;max-width:100%!important;position:absolute;right:0;top:0}.landing-page__content{margin-top:26vh;max-width:900px;width:80%}@media(max-width:530px){.landing-page__content{margin-top:13vh}}@media(max-width:999px){.landing-page__content{margin-top:13vh}}@media(min-width:1000px){.title-stack{text-align:right}}
+/*!***************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/homelanding/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************/
+/* Color Options
+--------------------------------------------- */
+.has-white-color {
+  color: #fff !important;
+}
+
+.has-white-background-color {
+  background-color: #fff;
+}
+
+a.has-white-background-color:active, a.has-white-background-color:hover {
+  background-color: white;
+}
+
+.is-style-outline .has-white-color:active, .is-style-outline .has-white-color:hover {
+  background-color: white;
+}
+
+.has-gray-color {
+  color: #99999a !important;
+}
+
+.has-gray-background-color {
+  background-color: #99999a;
+}
+
+a.has-gray-background-color:active, a.has-gray-background-color:hover {
+  background-color: rgb(178.6256157635, 178.6256157635, 179.3743842365);
+}
+
+.is-style-outline .has-gray-color:active, .is-style-outline .has-gray-color:hover {
+  background-color: white;
+}
+
+.has-light-gray-color {
+  color: #d9d9d9 !important;
+}
+
+.has-light-gray-background-color {
+  background-color: #d9d9d9;
+}
+
+a.has-light-gray-background-color:active, a.has-light-gray-background-color:hover {
+  background-color: rgb(242.5, 242.5, 242.5);
+}
+
+.is-style-outline .has-light-gray-color:active, .is-style-outline .has-light-gray-color:hover {
+  background-color: white;
+}
+
+.has-dark-gray-color {
+  color: #1d1d21 !important;
+}
+
+.has-dark-gray-background-color {
+  background-color: #1d1d21;
+}
+
+a.has-dark-gray-background-color:active, a.has-dark-gray-background-color:hover {
+  background-color: rgb(52.8548387097, 52.8548387097, 60.1451612903);
+}
+
+.is-style-outline .has-dark-gray-color:active, .is-style-outline .has-dark-gray-color:hover {
+  background-color: rgb(179.4193548387, 179.4193548387, 188.5806451613);
+}
+
+.has-black-color {
+  color: #000 !important;
+}
+
+.has-black-background-color {
+  background-color: #000;
+}
+
+a.has-black-background-color:active, a.has-black-background-color:hover {
+  background-color: rgb(25.5, 25.5, 25.5);
+}
+
+.is-style-outline .has-black-color:active, .is-style-outline .has-black-color:hover {
+  background-color: #999999;
+}
+
+.has-gold-color {
+  color: #a3905e !important;
+}
+
+.has-gold-background-color {
+  background-color: #a3905e;
+}
+
+a.has-gold-background-color:active, a.has-gold-background-color:hover {
+  background-color: rgb(181.5454545455, 166.3754940711, 126.4545454545);
+}
+
+.is-style-outline .has-gold-color:active, .is-style-outline .has-gold-color:hover {
+  background-color: white;
+}
+
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://www.fonts.com
+*/
+.heading {
+  font-family: "Bodoni Moda", serif;
+  font-weight: normal;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 10px black;
+}
+
+.landing-page {
+  max-width: 100% !important;
+  height: 100vh;
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.landing-page__content {
+  width: 80%;
+  max-width: 900px;
+  margin-top: 26vh;
+}
+@media (max-width: 530px) {
+  .landing-page__content {
+    margin-top: 13vh;
+  }
+}
+@media (max-width: 999px) {
+  .landing-page__content {
+    margin-top: 13vh;
+  }
+}
+
+@media (min-width: 1000px) {
+  .title-stack {
+    text-align: right;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/
