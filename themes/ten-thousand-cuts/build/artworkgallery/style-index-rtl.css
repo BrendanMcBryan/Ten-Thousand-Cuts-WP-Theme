@@ -4,9 +4,7 @@
 /**
  * The following styles get applied both on the front of your site
  * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
+**/
 .glide {
   position: relative;
   width: 100%;
@@ -70,12 +68,6 @@
 }
 .glide--rtl {
   direction: ltr;
-}
-
-.wp-block-tenthousandcuts-artworkgallery {
-  background-color: #21759b;
-  color: #fff;
-  padding: 2px;
 }
 
 .artgrid {

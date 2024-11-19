@@ -7,13 +7,11 @@
 
 .single-artwork__container {
   margin: auto;
+  height: 57vh;
   max-width: var(--wp--style--global--wide-size);
   img {
     width: 100%;
   }
-  // background-color: #21759b;
-  // color: #fff;
-  // padding: 2px;
 }
 
 .single-artwork__inner {

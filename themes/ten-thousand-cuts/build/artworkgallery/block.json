@@ -2,11 +2,11 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
   "name": "tenthousandcuts/artworkgallery",
-  "version": "0.1.0",
-  "title": "Artworkgallery",
-  "category": "widgets",
-  "icon": "smiley",
-  "description": "Example block scaffolded with Create Block tool.",
+  "version": "0.2.0",
+  "title": "Artwork Archive Gallery",
+  "category": "theme",
+  "icon": "format-gallery",
+  "description": "Grid of Artwork Posts",
   "example": {},
   "supports": {
     "html": false

@@ -1,31 +1,18 @@
 /**
  * The following styles get applied both on the front of your site
  * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
+**/
 
 @import '../../assets/css/mixins';
 
 @import '/node_modules/@glidejs/glide/src//assets/sass/glide.core.scss';
 // @import 'node_modules/@glidejs/glide/src/assets/sass/glide.core';
-.wp-block-tenthousandcuts-artworkgallery {
-  background-color: #21759b;
-  color: #fff;
-  padding: 2px;
-}
 
-img {
-  // width: 100%;
+.wp-block-tenthousandcuts-artworkgallery {
 }
 
 .artgrid {
   overflow: visible;
-  // background-color: lightpink;
-  // max-height: 54vh;
-  // display: flex;
-  // flex-direction: row;
-  // flex-wrap: wrap;
 
   /* ! Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
@@ -38,7 +25,6 @@ img {
 
   &__strip {
     width: 100%;
-    // background-color: chartreuse;
     columns: 4;
     column-gap: 1em;
     @include atMedium {
@@ -72,7 +58,6 @@ img {
     }
 
     &__title {
-      // background-color: red;
       color: white;
       font-size: var(--wp--preset--font-size--medium);
       text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
@@ -119,7 +104,6 @@ img {
     }
   }
   &__portrait {
-    // max-width: 20%;
     height: 30vh;
   }
   &__landscape {

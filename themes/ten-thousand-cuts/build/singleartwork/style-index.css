@@ -9,6 +9,7 @@
  */
 .single-artwork__container {
   margin: auto;
+  height: 57vh;
   max-width: var(--wp--style--global--wide-size);
 }
 .single-artwork__container img {
