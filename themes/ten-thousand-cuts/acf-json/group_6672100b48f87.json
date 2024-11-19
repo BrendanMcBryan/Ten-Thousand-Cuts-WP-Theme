@@ -80,7 +80,7 @@
             "label": "Materials",
             "name": "materials",
             "aria-label": "",
-            "type": "text",
+            "type": "select",
             "instructions": "materials used",
             "required": 0,
             "conditional_logic": 0,
@@ -89,11 +89,21 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "choices": {
+                "paper": "paper",
+                "glue": "glue"
+            },
+            "default_value": [
+                "paper",
+                "glue"
+            ],
+            "return_format": "value",
+            "multiple": 1,
+            "allow_null": 0,
+            "allow_in_bindings": 1,
+            "ui": 1,
+            "ajax": 0,
+            "placeholder": ""
         },
         {
             "key": "field_667217fdb1dcc",
@@ -312,5 +322,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1729633730
+    "modified": 1732060199
 }

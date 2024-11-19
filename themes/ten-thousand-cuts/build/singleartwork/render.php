@@ -40,6 +40,11 @@ switch ($aspectratio) {
 // get date
 $date = date_create(get_field('date_completed'));
 
+// get materials array
+
+$materials = implode(", ", get_field('materials'));
+
+
 ?>
 <div class="single-artwork__container" <?php echo get_block_wrapper_attributes(); ?>>
 
@@ -64,7 +69,7 @@ $date = date_create(get_field('date_completed'));
 				?>
 
 
-				<p class="info"><?php echo get_field('width') ?>" &times; <?php echo get_field('height') ?>" <span class="seperator">|</span> <?php echo get_field('materials') ?></p>
+				<p class="info"><?php echo get_field('width') ?>" &times; <?php echo get_field('height') ?>" <span class="seperator">|</span> <?php echo $materials ?></p>
 
 				<?php
 				if (get_field('description')) {
