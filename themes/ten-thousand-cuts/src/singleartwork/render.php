@@ -1,47 +1,42 @@
 <?php
-// get image aspect ratio, set image column width based on that aspect ration
+// * get image aspect ratio, set image column width based on that aspect ration
 list($width, $height, $type, $attr) = getimagesize(get_field('hero_image'));
 $aspectratio = $width / $height;
 switch ($aspectratio) {
 
 		// * very tall images
 	case $aspectratio < .33:
-		$imagewidth = "20%";
-
+		$imageclass = "verytall";
 		break;
 
 		// * tall images
-
 	case $aspectratio > .33 && $aspectratio < .8:
-		$imagewidth = "33%";
-
+		$imageclass = "tall";
 		break;
-		// * portrait images
+
+		// * portrait images (default)
 	case ($aspectratio > .8 && $aspectratio < 1):
-		$imagewidth = "40%";
-
-
+		$imageclass = "portrait";
 		break;
+
 		// * landscape images
 	case ($aspectratio > 1 && $aspectratio < 3):
-		$imagewidth = "60%";
-
+		$imageclass = "landscape";
 		break;
+
 		// * wide images
 	case $aspectratio > 3:
-		$imagewidth = "100%";
-
+		$imageclass = "wide";
 		break;
 
 	default:
-		$imagewidth = "100%";
+		$imageclass = "portrait";
 }
 
-// get date
+// * get date
 $date = date_create(get_field('date_completed'));
 
-// get materials array
-
+// * get materials array
 $materials = implode(", ", get_field('materials'));
 
 
@@ -50,7 +45,7 @@ $materials = implode(", ", get_field('materials'));
 
 
 	<div class="single-artwork__inner">
-		<div class="single-artwork__image" style="width: <?php echo $imagewidth ?>;">
+		<div class="single-artwork__image single-artwork__image--<?php echo $imageclass ?>">
 			<img src="<?php echo get_field('hero_image') ?>" alt="<?php echo get_field('title') ?>">
 		</div>
 
