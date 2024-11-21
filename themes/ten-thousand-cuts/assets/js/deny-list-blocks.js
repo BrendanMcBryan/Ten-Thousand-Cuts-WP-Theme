@@ -1,8 +1,9 @@
-import { unregisterBlockType } from '@wordpress/blocks';
-import domReady from '@wordpress/dom-ready';
-
 wp.domReady(function () {
-  wp.blocks.unregisterBlockType('core/embed');
+  wp.blocks.unregisterBlockType('core/embed', 'twitter');
+  wp.blocks.unregisterBlockType('core/embed', 'Facebook');
+  wp.blocks.unregisterBlockType('core/embed', 'YouTube');
+  wp.blocks.unregisterBlockType('core/embed', 'youtube');
+  wp.blocks.unregisterBlockType('core/embed', 'YouTubeEmbed');
   // var embed_variations = [
   //   'amazon-kindle',
   //   'animoto',
