@@ -1,6 +1,7 @@
 <?php
 // * get image aspect ratio, set image column width based on that aspect ration
 list($width, $height, $type, $attr) = getimagesize(get_field('hero_image'));
+
 $aspectratio = $width / $height;
 switch ($aspectratio) {
 
@@ -42,7 +43,6 @@ $materials = implode(", ", get_field('materials'));
 
 ?>
 <div class="single-artwork__container" <?php echo get_block_wrapper_attributes(); ?>>
-
 
 	<div class="single-artwork__inner">
 		<div class="single-artwork__image single-artwork__image--<?php echo $imageclass ?>">
@@ -104,14 +104,7 @@ $materials = implode(", ", get_field('materials'));
 
 
 		</div>
+
 	</div>
-
-
-
-
-
-
-
-
 
 </div>

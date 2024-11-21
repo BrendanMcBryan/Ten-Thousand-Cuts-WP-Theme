@@ -52,6 +52,7 @@
 				<h2 class="artgrid__art__title"><?php echo get_field('title') ?></h2>
 				<a href="<?php echo get_the_permalink() ?>">
 			</div>
+
 		<?php
 		}
 		// echo paginate_links();

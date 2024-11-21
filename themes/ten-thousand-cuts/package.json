@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.6.2",
+    "@wordpress/blocks": "^14.1.0",
     "@wordpress/components": "^28.5.0",
     "animate.css": "^4.1.1",
     "imagesloaded": "^5.0.0"
