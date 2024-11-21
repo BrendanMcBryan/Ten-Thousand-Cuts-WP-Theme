@@ -3,10 +3,10 @@
   "apiVersion": 3,
   "name": "tenthousandcuts/titleblock",
   "version": "0.1.0",
-  "title": "Title Block",
-  "category": "widgets",
-  "icon": "smiley",
-  "description": "Example block scaffolded with Create Block tool.",
+  "title": "Title Header Block",
+  "category": "theme",
+  "icon": "menu",
+  "description": "TenthousandCuts Header Block. Contains Nav and Identity.  ",
   "example": {},
   "supports": {
     "interactivity": true
