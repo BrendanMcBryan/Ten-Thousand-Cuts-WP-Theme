@@ -263,26 +263,45 @@ function ten_thousand_cuts_blocks()
 add_action('init', 'ten_thousand_cuts_blocks');
 
 // Disable uneeded blocks. 
-function my_theme_deny_list_blocks()
+
+function disallow_block_types($allowed_block_types, $block_editor_context)
 {
-	wp_enqueue_script(
-		'deny-list-blocks',
-		get_template_directory_uri() . '/assets/js/deny-list-blocks.js',
-		array('wp-blocks', 'wp-dom-ready', 'wp-edit-post'),
-		wp_get_theme()->get('Version'),
-		false
+	$disallowed_blocks = array(
+		'core/quote',
+		'core/freeform',
+		'core/media-text',
+		'core/missing',
+		'core/more',
+		'core/preformatted',
+		'core/tag-cloud',
+		'core/verse',
+		'core/embed',
 	);
+
+	// Get all registered blocks if $allowed_block_types is not already set.
+	if (! is_array($allowed_block_types) || empty($allowed_block_types)) {
+		$registered_blocks   = WP_Block_Type_Registry::get_instance()->get_all_registered();
+		$allowed_block_types = array_keys($registered_blocks);
+	}
+
+	// Create a new array for the allowed blocks.
+	$filtered_blocks = array();
+
+	// Loop through each block in the allowed blocks list.
+	foreach ($allowed_block_types as $block) {
+
+		// Check if the block is not in the disallowed blocks list.
+		if (! in_array($block, $disallowed_blocks, true)) {
+
+			// If it's not disallowed, add it to the filtered list.
+			$filtered_blocks[] = $block;
+		}
+	}
+
+	// Return the filtered list of allowed blocks
+	return $filtered_blocks;
+
+
+	return $allowed_block_types;
 }
-add_action('enqueue_block_editor_assets', 'my_theme_deny_list_blocks');
-
-
-// function enqueue_block_restrictions() {
-// 	wp_enqueue_script(
-// 		'enqueue-block-variations',
-// 		get_template_directory_uri() . '/assets/js/restrict-blocks.js',
-// 		array( 'wp-blocks', 'wp-dom-ready' ),
-// 		wp_get_theme()->get( 'Version' ),
-// 		false
-// 	);
-// }
-// add_action( 'enqueue_block_editor_assets', 'enqueue_block_restrictions' );
+add_filter('allowed_block_types_all', 'disallow_block_types', 10, 2);
