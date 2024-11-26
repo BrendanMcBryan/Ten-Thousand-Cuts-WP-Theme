@@ -8,9 +8,11 @@
 .single-artwork__container {
   margin: auto;
   height: 57vh;
+  padding: 1rem;
   max-width: var(--wp--style--global--wide-size);
   img {
-    width: 100%;
+    // width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -97,7 +99,7 @@
   }
 
   .pagination {
-    margin-top: auto;
+    margin-top: 1.5rem;
     display: flex;
     justify-content: space-between;
     a {

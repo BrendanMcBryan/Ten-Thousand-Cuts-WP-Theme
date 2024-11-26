@@ -1657,4 +1657,5 @@ html,
 body {
   height: auto;
   min-height: 100vh;
+  overflow: auto;
 }
