@@ -12,8 +12,14 @@
 }
 .wp-block-tenthousandcuts-titleblock .title_block {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+}
+.wp-block-tenthousandcuts-titleblock .title_block__logo {
+  max-width: 36px;
+}
+.wp-block-tenthousandcuts-titleblock .title_block__logo img {
+  width: 100%;
 }
 .wp-block-tenthousandcuts-titleblock .title_block__headlines {
   white-space: nowrap;
@@ -106,7 +112,8 @@
 
 header > div > .wp-block-tenthousandcuts-titleblock > .title_block {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 0.5rem;
   align-items: center;
   flex-direction: row;
 }
