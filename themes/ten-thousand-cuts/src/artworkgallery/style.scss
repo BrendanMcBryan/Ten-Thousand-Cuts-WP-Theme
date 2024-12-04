@@ -29,8 +29,6 @@
     column-gap: 1em;
     @include atMedium {
       columns: 3;
-      padding-left: 1em;
-      padding-right: 1em;
     }
     @include atSmall {
       columns: 2;
@@ -38,7 +36,7 @@
   }
   &__art {
     width: 50px;
-    background: #ec985a;
+    // background: #ec985a;
     color: white;
     margin: 0 1rem 1rem 0;
     display: inline-block;
@@ -97,14 +95,14 @@
     }
     @include atMedium {
       background-size: 105%;
-      height: 60vh;
+      height: 45vh;
     }
     @include atSmall {
       height: 30vh;
     }
   }
   &__portrait {
-    height: 30vh;
+    height: 25vh;
   }
   &__landscape {
     height: 12vh;
