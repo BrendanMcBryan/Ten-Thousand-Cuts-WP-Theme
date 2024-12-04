@@ -9,6 +9,7 @@ $logo = get_template_directory_uri() . '/assets/images/Eris-Icon.svg'
 		<div class="title_block__logo">
 			<a href="<?php echo get_home_url(); ?>"> <img src="<?php echo $logo ?>" id="logo" /> </a>
 		</div>
+
 		<div class="title_block__headlines">
 			<a href="<?php echo get_home_url(); ?>">
 				<h1 class="mb0 mt0"><?php echo get_bloginfo('name'); ?></h1>

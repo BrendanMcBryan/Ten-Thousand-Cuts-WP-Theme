@@ -121,7 +121,8 @@
 }
 .artgrid__art__title {
   color: white;
-  font-size: var(--wp--preset--font-size--medium);
+  font-size: var(--wp--preset--font-size--small);
+  text-align: left;
   text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
   position: absolute;
   bottom: 0;
