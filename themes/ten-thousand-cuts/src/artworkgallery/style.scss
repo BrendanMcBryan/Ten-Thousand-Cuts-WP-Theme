@@ -38,7 +38,8 @@
     width: 50px;
     // background: #ec985a;
     color: white;
-    margin: 0 1rem 1rem 0;
+    // margin: 0 1rem 1rem 0;
+    margin-bottom: 1rem;
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -65,14 +66,14 @@
       padding: 0 0 3px 3px;
       margin: 0;
     }
-  }
 
-  @for $i from 1 through 36 {
-    div:nth-child(#{$i}) {
-      $h: (random(400) + 100) + px;
-      // height: $h;
-      // line-height: $h;
+    @include atSmall {
+      margin-bottom: 0.5rem;
     }
+  }
+  @include atSmall {
+    padding-right: 1em;
+    padding-left: 1em;
   }
 }
 
@@ -98,7 +99,7 @@
       height: 45vh;
     }
     @include atSmall {
-      height: 30vh;
+      height: 35vh;
     }
   }
   &__portrait {
