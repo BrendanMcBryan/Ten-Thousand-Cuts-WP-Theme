@@ -21,7 +21,7 @@ $logo-width: 72px;
     align-items: center;
     // gap: -2rem;
     &__logo {
-      max-width: $logo-width;
+      width: $logo-width;
       opacity: 0.15;
       img {
         width: 100%;
