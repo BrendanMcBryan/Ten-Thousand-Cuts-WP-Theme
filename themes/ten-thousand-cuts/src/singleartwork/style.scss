@@ -36,6 +36,8 @@
 .single-artwork__info {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+
   flex-grow: 1;
   hr {
     margin-top: var(--wp--preset--spacing--10);
