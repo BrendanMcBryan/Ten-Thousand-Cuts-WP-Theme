@@ -4,9 +4,9 @@ import { store } from '@wordpress/interactivity';
 const menuBurger = document.querySelector('.title_block__menu--burger');
 const menu = document.querySelector('.title_block__menu--dropdown');
 
-menuBurger.addEventListener('click', (event) => {
-  // menu.style.display = 'block';
-});
+// menuBurger.addEventListener('click', (event) => {
+//   // menu.style.display = 'block';
+// });
 // menuBurger.addEventListener('mouseout', (event) => {
 //   menu.style.display = 'none';
 // });

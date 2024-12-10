@@ -25,7 +25,7 @@
 
   &__strip {
     width: 100%;
-    columns: 4;
+    columns: 5;
     column-gap: 1em;
     @include atMedium {
       columns: 3;

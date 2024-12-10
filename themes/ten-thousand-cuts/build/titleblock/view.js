@@ -63,9 +63,10 @@ __webpack_require__.r(__webpack_exports__);
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 const menuBurger = document.querySelector('.title_block__menu--burger');
 const menu = document.querySelector('.title_block__menu--dropdown');
-menuBurger.addEventListener('click', event => {
-  // menu.style.display = 'block';
-});
+
+// menuBurger.addEventListener('click', (event) => {
+//   // menu.style.display = 'block';
+// });
 // menuBurger.addEventListener('mouseout', (event) => {
 //   menu.style.display = 'none';
 // });
