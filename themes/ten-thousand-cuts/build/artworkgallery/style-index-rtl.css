@@ -72,6 +72,8 @@
 
 .artgrid {
   overflow: visible;
+  padding-left: 1em;
+  padding-right: 1em;
   /* ! Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -162,7 +164,7 @@
 @media (max-width: 999px) {
   .art__tall {
     background-size: 105%;
-    height: 45vh;
+    height: 38vh;
   }
 }
 @media (max-width: 530px) {
