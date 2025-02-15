@@ -16,9 +16,10 @@ $logo = get_template_directory_uri() . '/assets/images/Eris-Icon.svg'
 			</a>
 			<!-- <h2 class="mt0 mb5">< ?php echo get_bloginfo('description'); ?></h2> -->
 		</div>
-		<!-- <div class="title_block__menu">
+		<div class="title_block__menu">
+			<a href="/shop" class="menu_item menu_item_shop">shop</a>
 
-			<div class="title_block__menu--dropdown--container">
+			<!-- <div class="title_block__menu--dropdown--container">
 				<div class="title_block__menu--dropdown">
 					<div class="menu_item menu_item_shop">shop</div>
 					<a href="/artwork" class="menu_item menu_item_archives">archives</a>
@@ -26,11 +27,11 @@ $logo = get_template_directory_uri() . '/assets/images/Eris-Icon.svg'
 				</div>
 
 
+			</div> -->
+
+			<!-- <div class="title_block__menu--burger" id="menuBurger">
+				<i class="fa-solid fa-circle-notch" data-wp-on--click="actions.toggleMenu"></i>
+			</div> -->
+
 		</div>
-
-		<div class="title_block__menu--burger" id="menuBurger">
-			<i class="fa-solid fa-circle-notch" data-wp-on--click="actions.toggleMenu"></i>
-		</div> -->
-
 	</div>
-</div>

@@ -7,6 +7,14 @@ body,
   height: 100%;
 }
 
+html {
+  padding-bottom: 17vh;
+}
+
+footer {
+  min-height: 17vh;
+}
+
 /**************************
  * base margin/padding
  **************************/
@@ -1651,6 +1659,24 @@ body,
 
 ul.art-post-template {
   background-color: red;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+  background: none;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li::before {
+  display: none;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li::after {
+  display: none;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+  background: #c7c7c7;
+  border-bottom-color: #c7c7c7;
+}
+
+.woocommerce div.product .woocommerce-tabs .panel {
+  padding-right: 1em;
 }
 
 html,

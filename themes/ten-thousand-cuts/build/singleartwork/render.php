@@ -39,7 +39,15 @@ $date = date_create(get_field('date_completed'));
 
 // * get materials array
 $materials = implode(", ", get_field('materials'));
+/**
+ * Get product price by product ID.
+ */
+function wc_get_product_price($product_id)
+{
+	return ($product = wc_get_product($product_id)) ? $product->get_price() : false;
+}
 
+$productPrice = wc_get_product_price(291);
 
 ?>
 <div class="single-artwork__container" <?php echo get_block_wrapper_attributes(); ?>>
@@ -55,6 +63,7 @@ $materials = implode(", ", get_field('materials'));
 
 
 				<h1><?php echo get_field('title') ?></h1>
+				<!-- <h3><?php echo $productPrice ?></h3> -->
 				<?php
 				if (get_field('subtitle')) {
 
