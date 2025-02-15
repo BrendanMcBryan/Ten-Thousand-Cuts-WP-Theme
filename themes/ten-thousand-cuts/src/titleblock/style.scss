@@ -20,6 +20,10 @@ $logo-width: 72px;
     justify-content: flex-start;
     align-items: center;
     // gap: -2rem;
+    &__logoGroup {
+      display: flex;
+      align-items: center;
+    }
     &__logo {
       width: $logo-width;
       opacity: 0.15;
