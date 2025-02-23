@@ -8,10 +8,15 @@
  * Replace them with your own styles or remove the file completely.
  */
 .wp-block-tenthousandcuts-titleblock {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   z-index: 10;
 }
 .wp-block-tenthousandcuts-titleblock .title_block {
-  display: block;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -19,6 +24,7 @@
 .wp-block-tenthousandcuts-titleblock .title_block__logoGroup {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 .wp-block-tenthousandcuts-titleblock .title_block__logo {
   width: 72px;
