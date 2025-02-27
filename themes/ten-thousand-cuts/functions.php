@@ -149,7 +149,7 @@ endif;
 add_action('init', 'ten_thousand_cuts_block_styles');
 
 /**
- * Enqueue block stylesheets.
+ * * Enqueue block stylesheets.
  */
 
 if (! function_exists('ten_thousand_cuts_block_stylesheets')) :
@@ -184,7 +184,7 @@ endif;
 add_action('init', 'ten_thousand_cuts_block_stylesheets');
 
 /**
- * Register pattern categories.
+ * *Register pattern categories.
  */
 
 if (! function_exists('ten_thousand_cuts_pattern_categories')) :
@@ -223,6 +223,7 @@ function ten_thousand_cuts_files()
 		'nonce' => wp_create_nonce('wp_rest')
 	));
 }
+
 add_action('wp_enqueue_scripts', 'ten_thousand_cuts_files');
 
 function ten_thousand_cuts_features()
@@ -247,9 +248,6 @@ function ten_thousand_cuts_features()
 	add_theme_support('editor-styles');
 	add_editor_style(array('build/style-index.css', 'build/index.css'));
 }
-
-
-
 
 add_action('after_setup_theme', 'ten_thousand_cuts_features');
 
