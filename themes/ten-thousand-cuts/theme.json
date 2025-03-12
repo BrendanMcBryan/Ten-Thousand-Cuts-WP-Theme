@@ -160,22 +160,22 @@
 					"slug": "contrast"
 				},
 				{
-					"color": "#c24d2c",
+					"color": "#2e3334",
 					"name": "Contrast / Two",
 					"slug": "contrast-2"
 				},
 				{
-					"color": "#3e4a61",
+					"color": "#3a4242",
 					"name": "Contrast / Three",
 					"slug": "contrast-3"
 				},
 				{
-					"color": "#c24d2c",
+					"color": "#f22a98",
 					"name": "Accent",
 					"slug": "accent"
 				},
 				{
-					"color": "#3e4a61",
+					"color": "#34c0f7",
 					"name": "Accent / Two",
 					"slug": "accent-2"
 				},
@@ -190,12 +190,12 @@
 					"slug": "accent-4"
 				},
 				{
-					"color": "#2ca2c2",
+					"color": "#330221",
 					"name": "Accent / Five",
 					"slug": "accent-5"
 				},
 				{
-					"color": "#000000",
+					"color": "#63bcbc",
 					"name": "Black",
 					"slug": "black"
 				}
@@ -392,6 +392,9 @@
 						"border": {
 							"width": "1px"
 						},
+						"color": {
+							"text": "var(--wp--preset--color--accent)"
+						},
 						"spacing": {
 							"padding": {
 								"bottom": "calc(0.6rem - 1px)",
@@ -581,6 +584,18 @@
 				"spacing": {
 					"margin": {
 						"bottom": "var(--wp--preset--spacing--50)"
+					}
+				}
+			},
+			"core/heading": {
+				"color": {
+					"text": "var(--wp--preset--color--contrast)"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var(--wp--preset--color--contrast)"
+						}
 					}
 				}
 			},
@@ -912,7 +927,7 @@
 					"radius": ".33rem"
 				},
 				"color": {
-					"background": "var(--wp--preset--color--contrast)",
+					"background": "var(--wp--preset--color--accent)",
 					"text": "var(--wp--preset--color--base)"
 				},
 				"spacing": {
@@ -931,7 +946,7 @@
 			},
 			"caption": {
 				"color": {
-					"text": "var(--wp--preset--color--contrast-2)"
+					"text": "var(--wp--preset--color--accent-4)"
 				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--body)",
@@ -971,7 +986,7 @@
 			},
 			"heading": {
 				"color": {
-					"text": "var(--wp--preset--color--contrast)"
+					"text": "var(--wp--preset--color--contrast-2)"
 				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--marcellus)",
@@ -981,12 +996,15 @@
 			},
 			"link": {
 				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--contrast-2)"
+					},
 					"typography": {
 						"textDecoration": "none"
 					}
 				},
 				"color": {
-					"text": "var(--wp--preset--color--contrast)"
+					"text": "var(--wp--preset--color--accent-5)"
 				}
 			}
 		},
