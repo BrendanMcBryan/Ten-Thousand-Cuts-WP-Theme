@@ -11,5 +11,6 @@
       "bold": false,
       "italic": false
     }
-  ]
+  ],
+  "window.title": "local - ${rootName}"
 }

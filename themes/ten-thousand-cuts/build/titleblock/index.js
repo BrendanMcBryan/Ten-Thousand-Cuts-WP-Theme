@@ -54,7 +54,7 @@ __webpack_require__.r(__webpack_exports__);
 function Edit() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)(),
-    children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Titleblock – hello from the editor!', 'titleblock')
+    children: "Ten Thousand Cuts Header Block. Contains Nav and Identity."
   });
 }
 
@@ -178,7 +178,7 @@ module.exports = window["wp"]["i18n"];
   \***********************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"tenthousandcuts/titleblock","version":"0.1.0","title":"Title Header Block","category":"theme","icon":"menu","description":"TenthousandCuts Header Block. Contains Nav and Identity.  ","example":{},"supports":{"interactivity":true},"textdomain":"tenthousandcuts","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScriptModule":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"tenthousandcuts/titleblock","version":"0.1.0","title":"Title Header Block","category":"theme","icon":"menu","description":"Ten Thousand Cuts Header Block. Contains Nav and Identity.","example":{},"supports":{"interactivity":true},"textdomain":"tenthousandcuts","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScriptModule":"file:./view.js"}');
 
 /***/ })
 
