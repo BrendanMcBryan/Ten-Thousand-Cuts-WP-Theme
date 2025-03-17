@@ -29,3 +29,8 @@ select {
   background-color: transparent;
   border: none;
 }
+
+// Add margin to top of gallery on product page
+.woocommerce div.product div.images .flex-control-thumbs {
+  -webkit-margin-bottom-collapse: 1em;
+}
