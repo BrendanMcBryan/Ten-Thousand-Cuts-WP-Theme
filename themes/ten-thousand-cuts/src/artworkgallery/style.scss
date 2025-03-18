@@ -12,7 +12,9 @@
 }
 
 .artgrid {
-  overflow: visible;
+  max-height: 62vh;
+  // overflow: visible;
+  overflow: scroll;
   padding-right: 1em;
   padding-left: 1em;
   /* ! Hide scrollbar for IE, Edge and Firefox */
