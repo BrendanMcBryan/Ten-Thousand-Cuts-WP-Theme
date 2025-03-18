@@ -1,39 +1,32 @@
-// import Glide, { Controls } from '@glidejs/glide';
-// import Splide from '@splidejs/splide';
-// // var nextButton = document.querySelector('#next');
-// // var prevButton = document.querySelector('#prev');
+const scrollableDiv = document.getElementById('artgrid');
+let scrollDirection = 1; // 1 for down, -1 for up
+let scrollInterval;
+let isHovered = false;
 
-// const randomStart = Math.floor(Math.random() * 10 + 1);
-// //random number between 1 and 10.
+function autoScroll() {
+  if (!isHovered) {
+    scrollableDiv.scrollTop += scrollDirection;
 
-// var glide = new Glide('#artworkDisplay', {
-//   type: 'slider',
-//   perView: 5,
-//   focusAt: 'center',
-//   startAt: 5,
-// });
+    // Reverse direction if reaching top or bottom
+    if (
+      scrollableDiv.scrollTop + scrollableDiv.clientHeight >=
+        scrollableDiv.scrollHeight ||
+      scrollableDiv.scrollTop <= 0
+    ) {
+      scrollDirection *= -1;
+    }
+  }
+}
 
-// // nextButton.addEventListener('click', function (event) {
-// //   event.preventDefault();
+// Start autoscrolling
+scrollInterval = setInterval(autoScroll, 30);
 
-// //   glide.go('>');
-// // });
+// Pause on hover
+scrollableDiv.addEventListener('mouseover', () => {
+  isHovered = true;
+});
 
-// // prevButton.addEventListener('click', function (event) {
-// //   event.preventDefault();
-
-// //   glide.go('<');
-// // });
-
-// // glide.mount();
-
-// var splide = new Splide('.splide', {
-//   perPage: 2,
-//   type: 'loop',
-//   height: '68vh',
-
-//   focus: 'center',
-//   autoWidth: true,
-// });
-
-// splide.mount();
+// Resume on mouse leave
+scrollableDiv.addEventListener('mouseout', () => {
+  isHovered = false;
+});
