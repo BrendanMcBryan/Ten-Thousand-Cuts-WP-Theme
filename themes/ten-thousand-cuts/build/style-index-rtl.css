@@ -1697,3 +1697,7 @@ select {
 .woocommerce div.product div.images .flex-control-thumbs {
   -webkit-margin-bottom-collapse: 1em;
 }
+
+.woocommerce-product-description {
+  max-height: 50vh !important;
+}

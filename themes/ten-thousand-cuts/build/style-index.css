@@ -1698,4 +1698,8 @@ select {
   -webkit-margin-bottom-collapse: 1em;
 }
 
+.woocommerce-product-description {
+  max-height: 50vh !important;
+}
+
 /*# sourceMappingURL=style-index.css.map*/

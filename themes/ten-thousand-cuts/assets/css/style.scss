@@ -35,3 +35,8 @@ select {
 .woocommerce div.product div.images .flex-control-thumbs {
   -webkit-margin-bottom-collapse: 1em;
 }
+
+// limit height of product description box
+.woocommerce-product-description {
+  max-height: 50vh !important;
+}
