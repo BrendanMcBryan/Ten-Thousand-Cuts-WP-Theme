@@ -19,8 +19,10 @@
 
 .single-artwork__inner {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: var(--wp--style--block-gap);
+  align-items: flex-start;
 }
 .single-artwork__inner .single-artwork__image img {
   max-height: 57vh;
@@ -30,11 +32,11 @@
 }
 
 .single-artwork__info {
+  flex: 0 0 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: var(--wp--style--block-gap) 0;
-  flex-grow: 1;
 }
 .single-artwork__info hr {
   margin-top: var(--wp--preset--spacing--10);
@@ -73,7 +75,6 @@
   color: var(--wp--preset--color--accent-5);
 }
 .single-artwork__info p.description {
-  height: 18vh;
   margin-bottom: 1rem;
   overflow: scroll;
   margin-top: 1rem;

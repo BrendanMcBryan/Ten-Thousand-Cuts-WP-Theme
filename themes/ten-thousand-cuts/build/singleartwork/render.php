@@ -5,27 +5,27 @@ list($width, $height, $type, $attr) = getimagesize(get_field('hero_image'));
 $aspectratio = $width / $height;
 switch ($aspectratio) {
 
-		// * very tall images
+	// * very tall images
 	case $aspectratio < .33:
 		$imageclass = "verytall";
 		break;
 
-		// * tall images
+	// * tall images
 	case $aspectratio > .33 && $aspectratio < .8:
 		$imageclass = "tall";
 		break;
 
-		// * portrait images (default)
+	// * portrait images (default)
 	case ($aspectratio > .8 && $aspectratio < 1):
 		$imageclass = "portrait";
 		break;
 
-		// * landscape images
+	// * landscape images
 	case ($aspectratio > 1 && $aspectratio < 3):
 		$imageclass = "landscape";
 		break;
 
-		// * wide images
+	// * wide images
 	case $aspectratio > 3:
 		$imageclass = "wide";
 		break;
