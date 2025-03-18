@@ -1694,8 +1694,8 @@ select {
   border: none;
 }
 
-.woocommerce div.product div.images .flex-control-thumbs {
-  -webkit-margin-bottom-collapse: 1em;
+.flex-control-nav {
+  margin-top: 1em;
 }
 
 .woocommerce-product-description {

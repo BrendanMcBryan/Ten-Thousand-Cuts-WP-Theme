@@ -32,8 +32,8 @@ select {
 }
 
 // Add margin to top of gallery on product page
-.woocommerce div.product div.images .flex-control-thumbs {
-  -webkit-margin-bottom-collapse: 1em;
+.flex-control-nav {
+  margin-top: 1em;
 }
 
 // limit height of product description box
