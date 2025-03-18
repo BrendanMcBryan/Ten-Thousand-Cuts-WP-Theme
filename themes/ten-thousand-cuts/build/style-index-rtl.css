@@ -1682,7 +1682,6 @@ ul.art-post-template {
 html,
 body {
   box-sizing: border-box;
-  height: 100vh;
   overflow: auto;
 }
 
