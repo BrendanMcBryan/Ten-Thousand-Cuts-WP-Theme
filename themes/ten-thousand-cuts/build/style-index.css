@@ -1706,4 +1706,8 @@ select {
   max-height: 50vh !important;
 }
 
+.posted_in {
+  display: none;
+}
+
 /*# sourceMappingURL=style-index.css.map*/
