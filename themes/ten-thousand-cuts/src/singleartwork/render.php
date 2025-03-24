@@ -57,7 +57,7 @@ $productPrice = wc_get_product_price(291);
 			<img src="<?php echo get_field('hero_image') ?>" alt="<?php echo get_field('title') ?>">
 		</div>
 
-		<div class="single-artwork__info">
+		<div class="single-artwork__info single-artwork__info--<?php echo $imageclass ?>">
 			<div class="artworkinfo-block">
 				<h5><?php echo date_format($date, "Y") ?> </h5>
 

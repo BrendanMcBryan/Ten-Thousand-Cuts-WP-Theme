@@ -24,10 +24,15 @@
   align-items: flex-start;
 
   .single-artwork__image {
+    max-width: 50%;
     img {
       max-height: 57vh;
     }
+    &--wide {
+      max-width: 100%;
+    }
     &--landscape {
+      max-width: 100%;
       img {
         max-height: 50vh;
       }
@@ -42,6 +47,13 @@
   flex-direction: column;
   justify-content: space-between;
   padding: var(--wp--style--block-gap) 0;
+
+  &--wide {
+    flex-grow: 1;
+  }
+  &--landscape {
+    flex-grow: 1;
+  }
 
   // flex-grow: 1;
   hr {

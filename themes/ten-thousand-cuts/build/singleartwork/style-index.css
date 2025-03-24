@@ -24,8 +24,17 @@
   gap: var(--wp--style--block-gap);
   align-items: flex-start;
 }
+.single-artwork__inner .single-artwork__image {
+  max-width: 50%;
+}
 .single-artwork__inner .single-artwork__image img {
   max-height: 57vh;
+}
+.single-artwork__inner .single-artwork__image--wide {
+  max-width: 100%;
+}
+.single-artwork__inner .single-artwork__image--landscape {
+  max-width: 100%;
 }
 .single-artwork__inner .single-artwork__image--landscape img {
   max-height: 50vh;
@@ -37,6 +46,12 @@
   flex-direction: column;
   justify-content: space-between;
   padding: var(--wp--style--block-gap) 0;
+}
+.single-artwork__info--wide {
+  flex-grow: 1;
+}
+.single-artwork__info--landscape {
+  flex-grow: 1;
 }
 .single-artwork__info hr {
   margin-top: var(--wp--preset--spacing--10);
