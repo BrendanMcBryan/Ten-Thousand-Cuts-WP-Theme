@@ -1710,4 +1710,8 @@ select {
   display: none;
 }
 
+.wc-block-featured-product__description {
+  color: white;
+}
+
 /*# sourceMappingURL=style-index.css.map*/

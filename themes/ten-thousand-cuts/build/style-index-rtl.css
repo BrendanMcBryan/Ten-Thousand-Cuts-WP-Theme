@@ -1709,3 +1709,7 @@ select {
 .posted_in {
   display: none;
 }
+
+.wc-block-featured-product__description {
+  color: white;
+}

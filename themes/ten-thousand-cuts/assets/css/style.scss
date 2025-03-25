@@ -45,7 +45,12 @@ select {
 #content_ifr {
   max-height: 50vh !important;
 }
-
+// Hide Brand on Product Page
 .posted_in {
   display: none;
+}
+
+// Make description on featured product white
+.wc-block-featured-product__description {
+  color: white;
 }
