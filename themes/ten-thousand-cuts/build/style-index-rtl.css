@@ -1694,6 +1694,10 @@ select {
   border: none;
 }
 
+.flex-control-nav {
+  margin-top: 18px;
+}
+
 .woocommerce-product-description {
   max-height: 50vh !important;
 }

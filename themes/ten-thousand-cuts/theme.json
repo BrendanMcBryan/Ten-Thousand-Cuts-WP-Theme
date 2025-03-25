@@ -939,9 +939,10 @@
 					}
 				},
 				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--marcellus)",
 					"fontSize": "var(--wp--preset--font-size--small)",
 					"fontStyle": "normal",
-					"fontWeight": "500"
+					"fontWeight": "400"
 				}
 			},
 			"caption": {
