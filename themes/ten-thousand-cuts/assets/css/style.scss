@@ -53,4 +53,12 @@ select {
 // Make description on featured product white
 .wc-block-featured-product__description {
   color: white;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: white;
+  }
 }

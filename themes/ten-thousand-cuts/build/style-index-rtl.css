@@ -1713,3 +1713,11 @@ select {
 .wc-block-featured-product__description {
   color: white;
 }
+.wc-block-featured-product__description h1,
+.wc-block-featured-product__description h2,
+.wc-block-featured-product__description h3,
+.wc-block-featured-product__description h4,
+.wc-block-featured-product__description h5,
+.wc-block-featured-product__description h6 {
+  color: white;
+}
