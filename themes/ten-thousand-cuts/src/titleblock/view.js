@@ -11,35 +11,50 @@ const menu = document.querySelector('.title_block__menu--dropdown');
 //   menu.style.display = 'none';
 // });
 
-store('tenthousandcuts', {
-  actions: {
-    toggleMenu: () => {
-      console.log('toggle the Menu!');
-      let sideMenu = document.querySelector('.title_block__menu--dropdown');
-      let hamburger = document.querySelector('#menuBurger');
-      let closeButton = document.querySelector('#CloseMenu');
+function openPopup() {
+  document.getElementById('myPopup').style.display = 'flex';
+}
 
-      sideMenu.style.transform = 'translate(0%)';
-      hamburger.style.opacity = '0';
+function closePopup() {
+  document.getElementById('myPopup').style.display = 'none';
+}
 
-      document.addEventListener('click', (event) => {
-        const isClickInside = sideMenu.contains(event.target);
-        const isClickHamburger = hamburger.contains(event.target);
-        const isClickClose = closeButton.contains(event.target);
-        if ((!isClickInside && !isClickHamburger) || isClickClose) {
-          sideMenu.style.transform = 'translate(105%)';
-          hamburger.style.opacity = '1';
-        }
-        // if ((!isClickInside && !isClickHamburger) || isClickClose) {
-        //   sideMenu.style.transform = 'translate(105%)';
-        // }
-      });
-
-      document.addEventListener('keydown', (event) => {
-        if (event.keyCode == 27) {
-          sideMenu.style.transform = 'translate(105%)';
-        }
-      });
-    },
-  },
+// Close the popup if the user clicks outside of it
+window.addEventListener('click', function (event) {
+  if (event.target == document.getElementById('myPopup')) {
+    closePopup();
+  }
 });
+
+// store('tenthousandcuts', {
+//   actions: {
+//     toggleMenu: () => {
+//       console.log('toggle the Menu!');
+//       let sideMenu = document.querySelector('.title_block__menu--dropdown');
+//       let hamburger = document.querySelector('#menuBurger');
+//       let closeButton = document.querySelector('#CloseMenu');
+
+//       sideMenu.style.transform = 'translate(0%)';
+//       hamburger.style.opacity = '0';
+
+//       document.addEventListener('click', (event) => {
+//         const isClickInside = sideMenu.contains(event.target);
+//         const isClickHamburger = hamburger.contains(event.target);
+//         const isClickClose = closeButton.contains(event.target);
+//         if ((!isClickInside && !isClickHamburger) || isClickClose) {
+//           sideMenu.style.transform = 'translate(105%)';
+//           hamburger.style.opacity = '1';
+//         }
+//         // if ((!isClickInside && !isClickHamburger) || isClickClose) {
+//         //   sideMenu.style.transform = 'translate(105%)';
+//         // }
+//       });
+
+//       document.addEventListener('keydown', (event) => {
+//         if (event.keyCode == 27) {
+//           sideMenu.style.transform = 'translate(105%)';
+//         }
+//       });
+//     },
+//   },
+// });
