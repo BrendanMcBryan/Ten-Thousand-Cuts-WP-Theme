@@ -24,3 +24,37 @@ html {
 footer {
   min-height: 17vh;
 }
+
+// change page background on about page
+.aboutPageCover {
+  align-items: center;
+  background-position: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+
+  padding: 1em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  img {
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    margin: 0;
+
+    box-shadow: none;
+    max-height: none;
+    max-width: none;
+    object-fit: cover;
+    outline: none;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+  }
+}

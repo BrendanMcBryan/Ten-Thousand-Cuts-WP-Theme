@@ -63,7 +63,7 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 3px;
+  gap: 9px;
 }
 .wp-block-tenthousandcuts-titleblock .title_block__menu--burger {
   cursor: pointer;
