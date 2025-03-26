@@ -58,3 +58,20 @@ footer {
     width: 100%;
   }
 }
+
+// adjust font color in heading on about page
+.page-id-370,
+.page-template-wp-custom-template-about-page {
+  .title_block__headlines h1 {
+    color: white;
+  }
+  .menu_item {
+    color: white;
+  }
+  .wc-block-mini-cart__icon path {
+    fill: white;
+  }
+  #logo {
+    filter: brightness(0) invert(1);
+  }
+}

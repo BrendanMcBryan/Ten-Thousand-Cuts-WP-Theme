@@ -46,6 +46,23 @@ footer {
   width: 100%;
 }
 
+.page-id-370 .title_block__headlines h1,
+.page-template-wp-custom-template-about-page .title_block__headlines h1 {
+  color: white;
+}
+.page-id-370 .menu_item,
+.page-template-wp-custom-template-about-page .menu_item {
+  color: white;
+}
+.page-id-370 .wc-block-mini-cart__icon path,
+.page-template-wp-custom-template-about-page .wc-block-mini-cart__icon path {
+  fill: white;
+}
+.page-id-370 #logo,
+.page-template-wp-custom-template-about-page #logo {
+  filter: brightness(0) invert(1);
+}
+
 /**************************
  * base margin/padding
  **************************/
