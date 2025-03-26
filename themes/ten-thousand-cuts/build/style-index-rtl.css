@@ -22,6 +22,7 @@ footer {
   display: flex;
   justify-content: center;
   padding: 1em;
+  padding-top: 144px !important;
   position: absolute;
   top: 0;
   right: 0;
@@ -61,6 +62,11 @@ footer {
 .page-id-370 #logo,
 .page-template-wp-custom-template-about-page #logo {
   filter: brightness(0) invert(1);
+}
+.page-id-370 .wp-block-cover__inner-container,
+.page-template-wp-custom-template-about-page .wp-block-cover__inner-container {
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+  font-family: var(--wp--preset--font-family--marcellus);
 }
 
 /**************************
