@@ -100,8 +100,9 @@ footer {
       font-weight: 200;
     }
   }
-
-  .wc-block-mini-cart {
+  // hide cart and about link on about page
+  .wc-block-mini-cart,
+  .menu_item_about {
     display: none;
   }
 }

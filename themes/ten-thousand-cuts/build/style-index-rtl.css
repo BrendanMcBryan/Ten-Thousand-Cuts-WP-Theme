@@ -85,7 +85,9 @@ footer {
   font-weight: 200;
 }
 .page-id-370 .wc-block-mini-cart,
-.page-template-wp-custom-template-about-page .wc-block-mini-cart {
+.page-id-370 .menu_item_about,
+.page-template-wp-custom-template-about-page .wc-block-mini-cart,
+.page-template-wp-custom-template-about-page .menu_item_about {
   display: none;
 }
 
