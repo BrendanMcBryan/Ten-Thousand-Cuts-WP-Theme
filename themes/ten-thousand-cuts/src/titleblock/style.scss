@@ -25,6 +25,7 @@ $logo-width: 72px;
     // position: relative;
     justify-content: flex-start;
     align-items: center;
+
     // gap: -2rem;
     &__logoGroup {
       display: flex;
@@ -80,6 +81,13 @@ $logo-width: 72px;
       align-items: center;
       gap: 9px;
 
+      @include atSmall {
+        flex-direction: column;
+        justify-content: flex end;
+        align-items: end;
+        gap: 0;
+      }
+
       &--burger {
         cursor: pointer;
         transition: all 0.5s;
@@ -114,6 +122,8 @@ $logo-width: 72px;
       cursor: pointer;
       font-family: var(--wp--preset--font-family--body);
       font-weight: 100;
+      line-height: 1.2;
+
       &:hover {
         font-weight: 300;
       }
@@ -131,6 +141,9 @@ $logo-width: 72px;
     @include atMedium {
       padding-left: 1em;
       padding-right: 1em;
+    }
+    @include atSmall {
+      padding-right: 0;
     }
   }
 }

@@ -66,7 +66,19 @@ footer {
 .page-id-370 .wp-block-cover__inner-container,
 .page-template-wp-custom-template-about-page .wp-block-cover__inner-container {
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
-  font-family: var(--wp--preset--font-family--marcellus);
+}
+.page-id-370 .menu_item,
+.page-template-wp-custom-template-about-page .menu_item {
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+  font-weight: 300 !important;
+}
+.page-id-370 .title_block__headlines,
+.page-template-wp-custom-template-about-page .title_block__headlines {
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+.page-id-370 .title_block__headlines h1,
+.page-template-wp-custom-template-about-page .title_block__headlines h1 {
+  font-weight: 200;
 }
 
 /**************************
