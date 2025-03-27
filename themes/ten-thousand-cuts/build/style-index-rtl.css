@@ -84,6 +84,10 @@ footer {
 .page-template-wp-custom-template-about-page .title_block__headlines h1 {
   font-weight: 200;
 }
+.page-id-370 .wc-block-mini-cart,
+.page-template-wp-custom-template-about-page .wc-block-mini-cart {
+  display: none;
+}
 
 /**************************
  * base margin/padding
