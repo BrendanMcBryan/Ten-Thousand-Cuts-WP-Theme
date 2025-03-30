@@ -1,19 +1,108 @@
-// .home-main {
-//   height: 100vh;
-//   background-attachment: fixed;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   .entry-content {
-//     min-height: 100vh;
-//     .wp-block-group {
-//       min-height: 100vh;
-//     }
-//   }
-// }
+@import '../../assets/css/mixins';
 
 html,
 body,
 .wp-site-blocks {
   height: 100%;
+}
+html {
+  padding-bottom: 17vh;
+}
+// keep background image of floor clear of blocks
+footer {
+  min-height: 17vh;
+}
+
+// change page background on about page
+.aboutPageCover {
+  align-items: center;
+  background-position: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  padding-top: 72px !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  img {
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    margin: 0;
+
+    box-shadow: none;
+    max-height: none;
+    max-width: none;
+    object-fit: cover;
+    outline: none;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+// adjust font color in heading on about page
+.page-id-370,
+.page-template-wp-custom-template-about-page {
+  .title_block__headlines h1 {
+    color: white;
+  }
+  .menu_item {
+    color: white;
+  }
+  .wc-block-mini-cart__icon path {
+    fill: white;
+  }
+  #logo {
+    filter: brightness(0) invert(1);
+  }
+  .title_block__logo {
+    opacity: 0.65;
+  }
+  .wp-block-cover__inner-container {
+    text-shadow:
+      0px 4px 3px rgba(0, 0, 0, 0.4),
+      0px 8px 13px rgba(0, 0, 0, 0.1),
+      0px 18px 23px rgba(0, 0, 0, 0.1);
+    // font-family: var(--wp--preset--font-family--marcellus);
+  }
+  .menu_item {
+    text-shadow:
+      0px 4px 3px rgba(0, 0, 0, 0.4),
+      0px 8px 13px rgba(0, 0, 0, 0.1),
+      0px 18px 23px rgba(0, 0, 0, 0.1);
+    font-weight: 300 !important;
+  }
+  .title_block__headlines {
+    text-shadow:
+      0px 4px 3px rgba(0, 0, 0, 0.4),
+      0px 8px 13px rgba(0, 0, 0, 0.1),
+      0px 18px 23px rgba(0, 0, 0, 0.1);
+    h1 {
+      font-weight: 200;
+    }
+  }
+  // hide cart and about link on about page
+  .wc-block-mini-cart,
+  .menu_item_about {
+    display: none;
+  }
+}
+
+// adjust shop menu buttons on mobile
+@include atSmall {
+  .shopMenu__BTN {
+    .wp-block-button {
+      a {
+        padding: 3px 9px;
+        font-size: 12px !important;
+      }
+    }
+  }
 }

@@ -117,3 +117,22 @@ $step: 5;
 ul.art-post-template {
   background-color: red;
 }
+
+// ! Woo Commerce Helpers
+// .single_add_to_cart_button
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+  background: none;
+  &::before {
+    display: none;
+  }
+  &::after {
+    display: none;
+  }
+  &.active {
+    background: #c7c7c7;
+    border-bottom-color: #c7c7c7;
+  }
+}
+.woocommerce div.product .woocommerce-tabs .panel {
+  padding-left: 1em;
+}

@@ -30,9 +30,9 @@ import './editor.scss';
  * @return {Element} Element to render.
  */
 export default function Edit() {
-	return (
-		<p { ...useBlockProps() }>
-			{ __( 'Titleblock – hello from the editor!', 'titleblock' ) }
-		</p>
-	);
+  return (
+    <p {...useBlockProps()}>
+      Ten Thousand Cuts Header Block. Contains Nav and Identity.
+    </p>
+  );
 }

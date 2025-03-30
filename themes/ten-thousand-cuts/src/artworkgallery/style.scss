@@ -12,8 +12,11 @@
 }
 
 .artgrid {
-  overflow: visible;
-
+  max-height: 62vh;
+  // overflow: visible;
+  overflow: scroll;
+  padding-right: 1em;
+  padding-left: 1em;
   /* ! Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -25,22 +28,21 @@
 
   &__strip {
     width: 100%;
-    columns: 4;
+    columns: 5;
     column-gap: 1em;
     @include atMedium {
       columns: 3;
-      padding-left: 1em;
-      padding-right: 1em;
     }
     @include atSmall {
-      columns: 2;
+      columns: 1;
     }
   }
   &__art {
     width: 50px;
-    background: #ec985a;
+    // background: #ec985a;
     color: white;
-    margin: 0 1rem 1rem 0;
+    // margin: 0 1rem 1rem 0;
+    margin-bottom: 1rem;
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -59,7 +61,8 @@
 
     &__title {
       color: white;
-      font-size: var(--wp--preset--font-size--medium);
+      font-size: var(--wp--preset--font-size--small);
+      text-align: left;
       text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
       position: absolute;
       bottom: 0;
@@ -67,14 +70,14 @@
       padding: 0 0 3px 3px;
       margin: 0;
     }
-  }
 
-  @for $i from 1 through 36 {
-    div:nth-child(#{$i}) {
-      $h: (random(400) + 100) + px;
-      // height: $h;
-      // line-height: $h;
+    @include atSmall {
+      margin-bottom: 0.5rem;
     }
+  }
+  @include atSmall {
+    padding-right: 1em;
+    padding-left: 1em;
   }
 }
 
@@ -97,14 +100,17 @@
     }
     @include atMedium {
       background-size: 105%;
-      height: 60vh;
+      height: 38vh;
     }
     @include atSmall {
-      height: 30vh;
+      height: 65vh;
     }
   }
   &__portrait {
-    height: 30vh;
+    height: 25vh;
+    @include atSmall {
+      height: 50vh;
+    }
   }
   &__landscape {
     height: 12vh;
@@ -113,7 +119,7 @@
       background-size: 160%;
     }
     @include atSmall {
-      height: 10vh;
+      height: 22vh;
     }
   }
   &__wide {
@@ -124,7 +130,7 @@
       background-size: 180%;
     }
     @include atSmall {
-      height: 4vh;
+      height: 6vh;
     }
   }
 }

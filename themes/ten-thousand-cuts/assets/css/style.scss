@@ -14,6 +14,58 @@
 
 html,
 body {
-  height: auto;
-  min-height: 100vh;
+  box-sizing: border-box;
+  // height: 100vh;
+  // min-height: 100vh;
+  overflow: auto;
+}
+
+// Woo commerce styling adjustments
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+}
+
+// Add margin to top of gallery on product page
+.flex-control-nav {
+  margin-top: 18px;
+}
+
+// limit height of product description box
+.woocommerce-product-description {
+  max-height: 50vh !important;
+}
+#postdivrich.woocommerce-product-description {
+  max-height: 50vh !important;
+}
+#content_ifr {
+  max-height: 50vh !important;
+}
+// Hide Brand on Product Page
+.posted_in {
+  display: none;
+}
+
+// Make description on featured product white
+.wc-block-featured-product__description {
+  color: white;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: white;
+  }
+}
+.tenthousandcutsHeader {
+  @include atSmall {
+    gap: 0;
+    margin: auto 5%;
+  }
 }

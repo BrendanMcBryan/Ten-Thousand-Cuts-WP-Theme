@@ -71,7 +71,10 @@
 }
 
 .artgrid {
-  overflow: visible;
+  max-height: 62vh;
+  overflow: scroll;
+  padding-left: 1em;
+  padding-right: 1em;
   /* ! Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -82,8 +85,8 @@
 }
 .artgrid__strip {
   width: 100%;
-  -moz-columns: 4;
-       columns: 4;
+  -moz-columns: 5;
+       columns: 5;
   -moz-column-gap: 1em;
        column-gap: 1em;
 }
@@ -91,21 +94,18 @@
   .artgrid__strip {
     -moz-columns: 3;
          columns: 3;
-    padding-right: 1em;
-    padding-left: 1em;
   }
 }
 @media (max-width: 530px) {
   .artgrid__strip {
-    -moz-columns: 2;
-         columns: 2;
+    -moz-columns: 1;
+         columns: 1;
   }
 }
 .artgrid__art {
   width: 50px;
-  background: #ec985a;
   color: white;
-  margin: 0 0 1rem 1rem;
+  margin-bottom: 1rem;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -124,7 +124,8 @@
 }
 .artgrid__art__title {
   color: white;
-  font-size: var(--wp--preset--font-size--medium);
+  font-size: var(--wp--preset--font-size--small);
+  text-align: right;
   text-shadow: -1px 2px 1px rgba(0, 0, 0, 0.8);
   position: absolute;
   bottom: 0;
@@ -132,6 +133,18 @@
   padding: 0 3px 3px 0;
   margin: 0;
 }
+@media (max-width: 530px) {
+  .artgrid__art {
+    margin-bottom: 0.5rem;
+  }
+}
+@media (max-width: 530px) {
+  .artgrid {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
 .art {
   background-size: cover;
   background-position: center center;
@@ -152,16 +165,21 @@
 @media (max-width: 999px) {
   .art__tall {
     background-size: 105%;
-    height: 60vh;
+    height: 38vh;
   }
 }
 @media (max-width: 530px) {
   .art__tall {
-    height: 30vh;
+    height: 65vh;
   }
 }
 .art__portrait {
-  height: 30vh;
+  height: 25vh;
+}
+@media (max-width: 530px) {
+  .art__portrait {
+    height: 50vh;
+  }
 }
 .art__landscape {
   height: 12vh;
@@ -172,7 +190,7 @@
 }
 @media (max-width: 530px) {
   .art__landscape {
-    height: 10vh;
+    height: 22vh;
   }
 }
 .art__wide {
@@ -184,6 +202,6 @@
 }
 @media (max-width: 530px) {
   .art__wide {
-    height: 4vh;
+    height: 6vh;
   }
 }

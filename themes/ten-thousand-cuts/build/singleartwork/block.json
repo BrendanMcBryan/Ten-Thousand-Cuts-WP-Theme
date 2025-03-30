@@ -4,9 +4,9 @@
   "name": "tenthousandcuts/singleartwork",
   "version": "0.1.0",
   "title": "Single Artwork",
-  "category": "widgets",
-  "icon": "smiley",
-  "description": "Example block scaffolded with Create Block tool.",
+  "category": "theme",
+  "icon": "align-left",
+  "description": "Block For displaying Artowrk information. Used on Single Artwork Page.",
   "example": {},
   "supports": {
     "html": false

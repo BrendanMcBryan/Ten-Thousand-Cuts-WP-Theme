@@ -5,7 +5,7 @@
 		<?php
 		$artwork = new WP_Query(array(
 			'post_type' => 'artwork',
-			// 'posts_per_page' => -1,
+			'posts_per_page' => -1,
 			'order' => 'ASC',
 			'orderby' => 'rand',
 			'meta_query' => array(

@@ -7,6 +7,96 @@ body,
   height: 100%;
 }
 
+html {
+  padding-bottom: 17vh;
+}
+
+footer {
+  min-height: 17vh;
+}
+
+.aboutPageCover {
+  align-items: center;
+  background-position: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  padding-top: 72px !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.aboutPageCover img {
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  box-shadow: none;
+  max-height: none;
+  max-width: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+  outline: none;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.page-id-370 .title_block__headlines h1,
+.page-template-wp-custom-template-about-page .title_block__headlines h1 {
+  color: white;
+}
+.page-id-370 .menu_item,
+.page-template-wp-custom-template-about-page .menu_item {
+  color: white;
+}
+.page-id-370 .wc-block-mini-cart__icon path,
+.page-template-wp-custom-template-about-page .wc-block-mini-cart__icon path {
+  fill: white;
+}
+.page-id-370 #logo,
+.page-template-wp-custom-template-about-page #logo {
+  filter: brightness(0) invert(1);
+}
+.page-id-370 .title_block__logo,
+.page-template-wp-custom-template-about-page .title_block__logo {
+  opacity: 0.65;
+}
+.page-id-370 .wp-block-cover__inner-container,
+.page-template-wp-custom-template-about-page .wp-block-cover__inner-container {
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+.page-id-370 .menu_item,
+.page-template-wp-custom-template-about-page .menu_item {
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+  font-weight: 300 !important;
+}
+.page-id-370 .title_block__headlines,
+.page-template-wp-custom-template-about-page .title_block__headlines {
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+.page-id-370 .title_block__headlines h1,
+.page-template-wp-custom-template-about-page .title_block__headlines h1 {
+  font-weight: 200;
+}
+.page-id-370 .wc-block-mini-cart,
+.page-id-370 .menu_item_about,
+.page-template-wp-custom-template-about-page .wc-block-mini-cart,
+.page-template-wp-custom-template-about-page .menu_item_about {
+  display: none;
+}
+
+@media (max-width: 530px) {
+  .shopMenu__BTN .wp-block-button a {
+    padding: 3px 9px;
+    font-size: 12px !important;
+  }
+}
 /**************************
  * base margin/padding
  **************************/
@@ -1653,8 +1743,74 @@ ul.art-post-template {
   background-color: red;
 }
 
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+  background: none;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li::before {
+  display: none;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li::after {
+  display: none;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+  background: #c7c7c7;
+  border-bottom-color: #c7c7c7;
+}
+
+.woocommerce div.product .woocommerce-tabs .panel {
+  padding-right: 1em;
+}
+
 html,
 body {
-  height: auto;
-  min-height: 100vh;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+}
+
+.flex-control-nav {
+  margin-top: 18px;
+}
+
+.woocommerce-product-description {
+  max-height: 50vh !important;
+}
+
+#postdivrich.woocommerce-product-description {
+  max-height: 50vh !important;
+}
+
+#content_ifr {
+  max-height: 50vh !important;
+}
+
+.posted_in {
+  display: none;
+}
+
+.wc-block-featured-product__description {
+  color: white;
+}
+.wc-block-featured-product__description h1,
+.wc-block-featured-product__description h2,
+.wc-block-featured-product__description h3,
+.wc-block-featured-product__description h4,
+.wc-block-featured-product__description h5,
+.wc-block-featured-product__description h6 {
+  color: white;
+}
+
+@media (max-width: 530px) {
+  .tenthousandcutsHeader {
+    gap: 0;
+    margin: auto 5%;
+  }
 }

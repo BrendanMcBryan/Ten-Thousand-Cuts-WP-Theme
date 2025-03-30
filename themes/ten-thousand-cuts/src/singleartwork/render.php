@@ -5,27 +5,27 @@ list($width, $height, $type, $attr) = getimagesize(get_field('hero_image'));
 $aspectratio = $width / $height;
 switch ($aspectratio) {
 
-		// * very tall images
+	// * very tall images
 	case $aspectratio < .33:
 		$imageclass = "verytall";
 		break;
 
-		// * tall images
+	// * tall images
 	case $aspectratio > .33 && $aspectratio < .8:
 		$imageclass = "tall";
 		break;
 
-		// * portrait images (default)
+	// * portrait images (default)
 	case ($aspectratio > .8 && $aspectratio < 1):
 		$imageclass = "portrait";
 		break;
 
-		// * landscape images
+	// * landscape images
 	case ($aspectratio > 1 && $aspectratio < 3):
 		$imageclass = "landscape";
 		break;
 
-		// * wide images
+	// * wide images
 	case $aspectratio > 3:
 		$imageclass = "wide";
 		break;
@@ -39,7 +39,15 @@ $date = date_create(get_field('date_completed'));
 
 // * get materials array
 $materials = implode(", ", get_field('materials'));
+/**
+ * Get product price by product ID.
+ */
+function wc_get_product_price($product_id)
+{
+	return ($product = wc_get_product($product_id)) ? $product->get_price() : false;
+}
 
+$productPrice = wc_get_product_price(291);
 
 ?>
 <div class="single-artwork__container" <?php echo get_block_wrapper_attributes(); ?>>
@@ -49,12 +57,13 @@ $materials = implode(", ", get_field('materials'));
 			<img src="<?php echo get_field('hero_image') ?>" alt="<?php echo get_field('title') ?>">
 		</div>
 
-		<div class="single-artwork__info">
+		<div class="single-artwork__info single-artwork__info--<?php echo $imageclass ?>">
 			<div class="artworkinfo-block">
 				<h5><?php echo date_format($date, "Y") ?> </h5>
 
 
 				<h1><?php echo get_field('title') ?></h1>
+				<!-- <h3><?php echo $productPrice ?></h3> -->
 				<?php
 				if (get_field('subtitle')) {
 
