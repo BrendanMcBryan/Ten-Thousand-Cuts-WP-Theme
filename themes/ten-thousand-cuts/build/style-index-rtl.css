@@ -91,6 +91,11 @@ footer {
   display: none;
 }
 
+.shopMenu__BTN .wp-block-button a {
+  padding: 3px 9px;
+  font-size: 12px !important;
+}
+
 /**************************
  * base margin/padding
  **************************/
