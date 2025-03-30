@@ -34,7 +34,7 @@
       columns: 3;
     }
     @include atSmall {
-      columns: 2;
+      columns: 1;
     }
   }
   &__art {
@@ -103,11 +103,14 @@
       height: 38vh;
     }
     @include atSmall {
-      height: 35vh;
+      height: 65vh;
     }
   }
   &__portrait {
     height: 25vh;
+    @include atSmall {
+      height: 50vh;
+    }
   }
   &__landscape {
     height: 12vh;
@@ -116,7 +119,7 @@
       background-size: 160%;
     }
     @include atSmall {
-      height: 10vh;
+      height: 20vh;
     }
   }
   &__wide {
@@ -127,7 +130,7 @@
       background-size: 180%;
     }
     @include atSmall {
-      height: 4vh;
+      height: 6vh;
     }
   }
 }
