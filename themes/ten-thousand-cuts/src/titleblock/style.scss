@@ -144,6 +144,7 @@ $logo-width: 72px;
     }
     @include atSmall {
       padding-right: 0;
+      padding-left: 0;
     }
   }
 }
