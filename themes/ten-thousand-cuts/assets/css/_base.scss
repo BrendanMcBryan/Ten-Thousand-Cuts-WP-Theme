@@ -96,11 +96,13 @@ footer {
 }
 
 // adjust shop menu buttons on mobile
-.shopMenu__BTN {
-  .wp-block-button {
-    a {
-      padding: 3px 9px;
-      font-size: 12px !important;
+@include atSmall {
+  .shopMenu__BTN {
+    .wp-block-button {
+      a {
+        padding: 3px 9px;
+        font-size: 12px !important;
+      }
     }
   }
 }
