@@ -148,7 +148,8 @@ $logo-width: 72px;
 
   @include atSmall {
     flex-grow: 1;
-    padding-left: 5%;
+    // padding-left: 5%;
+
     gap: 0;
   }
 }

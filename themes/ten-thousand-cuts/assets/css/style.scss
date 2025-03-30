@@ -66,5 +66,6 @@ select {
 .tenthousandcutsHeader {
   @include atSmall {
     gap: 0;
+    margin: auto 5%;
   }
 }

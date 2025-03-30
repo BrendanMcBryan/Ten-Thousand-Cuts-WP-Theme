@@ -1805,5 +1805,6 @@ select {
 @media (max-width: 530px) {
   .tenthousandcutsHeader {
     gap: 0;
+    margin: auto 5%;
   }
 }
