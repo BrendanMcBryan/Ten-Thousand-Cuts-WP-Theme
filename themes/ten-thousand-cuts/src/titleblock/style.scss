@@ -8,10 +8,8 @@
 @import '../../assets/css/mixins';
 
 $logo-width: 72px;
+
 .wp-block-tenthousandcuts-titleblock {
-  // background-color: #21759b;
-  // color: #fff;
-  // padding: 2px;
   width: 80%;
   margin: auto;
   display: flex;
@@ -146,6 +144,12 @@ $logo-width: 72px;
       padding-right: 0;
       padding-left: 0;
     }
+  }
+
+  @include atSmall {
+    flex-grow: 1;
+    padding-left: 5%;
+    gap: 0;
   }
 }
 

@@ -126,6 +126,13 @@
     padding-right: 0;
   }
 }
+@media (max-width: 530px) {
+  .wp-block-tenthousandcuts-titleblock {
+    flex-grow: 1;
+    padding-right: 5%;
+    gap: 0;
+  }
+}
 
 .aboutModal {
   transition: all 3s;

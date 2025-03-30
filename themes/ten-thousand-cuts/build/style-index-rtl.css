@@ -1801,3 +1801,9 @@ select {
 .wc-block-featured-product__description h6 {
   color: white;
 }
+
+@media (max-width: 530px) {
+  .tenthousandcutsHeader {
+    gap: 0;
+  }
+}

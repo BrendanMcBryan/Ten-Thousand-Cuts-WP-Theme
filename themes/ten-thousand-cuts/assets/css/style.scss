@@ -63,3 +63,8 @@ select {
     color: white;
   }
 }
+.tenthousandcutsHeader {
+  @include atSmall {
+    gap: 0;
+  }
+}
