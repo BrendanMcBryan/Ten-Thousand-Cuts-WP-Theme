@@ -25,7 +25,7 @@ $logo = get_template_directory_uri() . '/assets/images/Eris-Icon.svg'
 
 			<a href="/about" class="menu_item menu_item_about">about</a>
 			<a href="/shop" class="menu_item menu_item_shop">shop</a>
-			<a href="/shop" class="menu_item menu_item_shop">Test</a>
+			<a href="/shop" class="menu_item menu_item_shop">new test</a>
 		</div>
 
 	</div>
