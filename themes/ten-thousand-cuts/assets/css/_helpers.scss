@@ -71,6 +71,10 @@ $step: 5;
 }
 
 /**************************
+ * Utilities
+ **************************/
+
+/**************************
  * Design Flourishes
 **************************/
 
@@ -118,8 +122,10 @@ ul.art-post-template {
   background-color: red;
 }
 
-// ! Woo Commerce Helpers
-// .single_add_to_cart_button
+/**************************
+ * Woo Commerce Helpers
+**************************/
+
 .woocommerce div.product .woocommerce-tabs ul.tabs li {
   background: none;
   &::before {

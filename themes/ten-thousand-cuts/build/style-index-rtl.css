@@ -1697,6 +1697,9 @@ footer {
 }
 
 /**************************
+ * Utilities
+ **************************/
+/**************************
  * Design Flourishes
 **************************/
 .leaf {
@@ -1743,6 +1746,9 @@ ul.art-post-template {
   background-color: red;
 }
 
+/**************************
+ * Woo Commerce Helpers
+**************************/
 .woocommerce div.product .woocommerce-tabs ul.tabs li {
   background: none;
 }
@@ -1812,5 +1818,11 @@ select {
   .tenthousandcutsHeader {
     gap: 0;
     margin: auto 5%;
+  }
+}
+
+@media (max-width: 530px) {
+  .hideOnMobile {
+    display: none;
   }
 }

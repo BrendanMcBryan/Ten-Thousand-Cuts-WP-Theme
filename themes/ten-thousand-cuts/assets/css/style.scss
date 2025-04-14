@@ -69,3 +69,9 @@ select {
     margin: auto 5%;
   }
 }
+
+.hideOnMobile {
+  @include atSmall {
+    display: none;
+  }
+}
