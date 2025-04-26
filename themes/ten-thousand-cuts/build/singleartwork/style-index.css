@@ -39,6 +39,11 @@
 .single-artwork__inner .single-artwork__image--landscape img {
   max-height: 50vh;
 }
+@media (max-width: 530px) {
+  .single-artwork__inner .single-artwork__image {
+    max-width: 100%;
+  }
+}
 
 .single-artwork__info {
   flex: 0 0 40%;
