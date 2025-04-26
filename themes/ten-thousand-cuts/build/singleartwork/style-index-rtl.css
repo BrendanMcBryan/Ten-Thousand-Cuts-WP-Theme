@@ -43,6 +43,9 @@
   .single-artwork__inner .single-artwork__image {
     max-width: 100%;
   }
+  .single-artwork__inner .single-artwork__image img {
+    max-height: none;
+  }
 }
 
 .single-artwork__info {
@@ -125,4 +128,17 @@
   font-size: var(--wp--preset--font-size--small);
   color: var(--wp--preset--color--contrast-2);
   text-decoration: none;
+}
+@media (max-width: 530px) {
+  .single-artwork__info {
+    padding-top: 0;
+  }
+  .single-artwork__info h1 {
+    font-size: var(--wp--preset--font-size--x-large);
+    margin-bottom: 0;
+  }
+  .single-artwork__info .info {
+    margin-top: 0;
+    font-size: 0.75rem;
+  }
 }
