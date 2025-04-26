@@ -82,6 +82,15 @@ $productPrice = wc_get_product_price(291);
 				<?php }
 
 				?>
+				<?php
+				if (get_field('available_for_purchase')) { ?>
+					<div class="avaiableBTN">
+
+						<a class="wp-block-button__link wp-element-button avaiableBTN" href="<?php echo
+																																									'/?s=' . get_field('title') .  '&post_type=product' ?>"> Prints Available</a>
+					</div>
+				<?php		}
+				?>
 			</div>
 			<div class="pagination">
 				<small class="page-item">
