@@ -75,3 +75,11 @@ select {
     display: none;
   }
 }
+
+// Search section adjustments
+.wp-block-search__label {
+  display: none;
+}
+.wp-block-search__input {
+  background: transparent;
+}
