@@ -140,6 +140,11 @@
 
       text-decoration: none;
     }
+
+    position: fixed;
+  bottom: 18px;
+  left: 9px;
+  right: 9px;
   }
 
   @include atSmall {

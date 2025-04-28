@@ -122,6 +122,10 @@
   margin-top: 1.5rem;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  bottom: 18px;
+  right: 9px;
+  left: 9px;
 }
 .single-artwork__info .pagination a {
   font-family: var(--wp--preset--font-family--marcellus);
