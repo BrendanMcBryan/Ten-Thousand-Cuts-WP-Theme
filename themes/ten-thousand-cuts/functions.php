@@ -260,7 +260,7 @@ function ten_thousand_cuts_blocks()
 	register_block_type_from_metadata(__DIR__ . '/build/titleblock');
 	register_block_type_from_metadata(__DIR__ . '/build/singleartwork');
 	register_block_type_from_metadata(__DIR__ . '/build/artworkgallery');
-	register_block_type_from_metadata(__DIR__ . '/build/artworkgalleryb');
+
 }
 
 add_action('init', 'ten_thousand_cuts_blocks');
