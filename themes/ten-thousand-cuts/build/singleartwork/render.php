@@ -61,16 +61,35 @@ $productPrice = wc_get_product_price(291);
 			<div class="artworkinfo-block">
 				<h5><?php echo date_format($date, "Y") ?> </h5>
 
+<div class="artworkinfo-titleblock">
+	
+					<div class="artworkinfo-titleblock-title">
+						<h1><?php echo get_field('title') ?></h1>
+						<?php
+						if (get_field('subtitle')) {
+						?> <h2><?php echo get_field('subtitle') ?> </h2>
+						<?php }
+						?>
+					</div>
 
-				<h1><?php echo get_field('title') ?></h1>
-				<!-- <h3><?php echo $productPrice ?></h3> -->
-				<?php
-				if (get_field('subtitle')) {
+<div class="artworkinfo-titleblock-button">
+	<?php
+					if (get_field('available_for_purchase')) { ?>
+						<div class="avaiableBTN">
+	
+							<a class=" avaiableBTN wp-block-button__link wp-element-button " href="<?php echo
+																																										'/?s=' . get_field('title') .  '&post_type=product' ?>"> Prints Available</a>
+						</div>
+					<?php		} ?>
+</div>
 
-				?> <h2><?php echo get_field('subtitle') ?> </h2>
-				<?php }
 
-				?>
+
+
+					
+</div>
+
+
 
 
 				<p class="info"><?php echo get_field('width') ?>" &times; <?php echo get_field('height') ?>" <span class="seperator">|</span> <?php echo $materials ?></p>
@@ -82,15 +101,7 @@ $productPrice = wc_get_product_price(291);
 				<?php }
 
 				?>
-				<?php
-				if (get_field('available_for_purchase')) { ?>
-					<div class="avaiableBTN">
-
-						<a class="wp-block-button__link wp-element-button avaiableBTN" href="<?php echo
-																																									'/?s=' . get_field('title') .  '&post_type=product' ?>"> Prints Available</a>
-					</div>
-				<?php		}
-				?>
+		
 			</div>
 			<div class="pagination">
 				<small class="page-item">

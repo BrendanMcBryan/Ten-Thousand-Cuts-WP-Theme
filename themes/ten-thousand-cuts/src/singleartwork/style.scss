@@ -160,7 +160,16 @@
     }
   }
 
-  .avaiableBTN {
-    margin-top: 1em;
-  }
+
+}
+
+.artworkinfo-titleblock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avaiableBTN {
+  // margin-top: 1em;      
+  font-size: var(--wp--preset--font-size--x-small) !important;
 }
