@@ -337,6 +337,12 @@
 			"fontSizes": [
 				{
 					"fluid": false,
+					"name": "Extra Small",
+					"size": "0.6rem",
+					"slug": "x-small"
+				},
+				{
+					"fluid": false,
 					"name": "Small",
 					"size": "0.9rem",
 					"slug": "small"
