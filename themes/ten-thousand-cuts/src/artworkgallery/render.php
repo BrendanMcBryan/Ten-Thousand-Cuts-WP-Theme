@@ -1,6 +1,6 @@
 <section id="artgrid" class="artgrid alignwide">
 
-	<div class="artgrid__strip">
+	<div class="artgrid__strip" id="artgrid__strip">
 
 		<?php
 		$artwork = new WP_Query(array(

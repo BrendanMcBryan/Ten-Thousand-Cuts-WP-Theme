@@ -1771,6 +1771,7 @@ html,
 body {
   box-sizing: border-box;
   overflow: auto;
+  scroll-behavior: smooth;
 }
 
 select {

@@ -9,7 +9,9 @@
 // @import 'node_modules/@glidejs/glide/src/assets/sass/glide.core';
 
 .wp-block-tenthousandcuts-artworkgallery {
+  scroll-behavior: smooth;
 }
+
 
 .artgrid {
   max-height: 62vh;

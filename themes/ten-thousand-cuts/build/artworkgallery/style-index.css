@@ -70,6 +70,10 @@
   direction: rtl;
 }
 
+.wp-block-tenthousandcuts-artworkgallery {
+  scroll-behavior: smooth;
+}
+
 .artgrid {
   max-height: 62vh;
   overflow: scroll;
