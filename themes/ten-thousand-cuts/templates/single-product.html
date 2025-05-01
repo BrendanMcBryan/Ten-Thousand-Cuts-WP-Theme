@@ -1,6 +1,6 @@
 <!-- wp:template-part {"slug":"header"} /-->
 
-<!-- wp:group {"tagName":"main","layout":{"inherit":true,"type":"constrained"}} -->
+<!-- wp:group {"tagName":"main","layout":{"inherit":true,"type":"constrained","contentSize":"90%"}} -->
 <main class="wp-block-group"><!-- wp:woocommerce/breadcrumbs /-->
 
 <!-- wp:woocommerce/store-notices /-->
@@ -21,10 +21,12 @@
 
 <!-- wp:woocommerce/add-to-cart-form /-->
 
-<!-- wp:woocommerce/product-meta -->
+<!-- wp:woocommerce/product-meta {"metadata":{"ignoredHookedBlocks":["core/post-terms"]}} -->
 <div class="wp-block-woocommerce-product-meta"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:post-terms {"term":"product_cat","prefix":"Category: "} /--></div>
-<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:post-terms {"term":"product_brand","prefix":"Brands: "} /--></div>
 <!-- /wp:woocommerce/product-meta --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
