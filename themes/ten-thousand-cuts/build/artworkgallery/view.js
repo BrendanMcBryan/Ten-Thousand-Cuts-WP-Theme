@@ -1,3 +1,7 @@
+/******/ (() => { // webpackBootstrap
+/*!************************************!*\
+  !*** ./src/artworkgallery/view.js ***!
+  \************************************/
 // const scrollableDiv = document.getElementById('artgrid');
 // let scrollDirection = 1; // 1 for down, -1 for up
 // let scrollInterval;
@@ -30,8 +34,6 @@
 // scrollableDiv.addEventListener('mouseout', () => {
 //   isHovered = false;
 // });
-
-
 
 // const element = document.getElementById('artgrid');
 
@@ -71,33 +73,30 @@
 
 const scrollableDiv = document.getElementById('artgrid');
 const content = document.getElementById('artgrid__strip');
-const scrollDuration = 155*1000; // Time in milliseconds for one scroll cycle (down and up)
+const scrollDuration = 155 * 1000; // Time in milliseconds for one scroll cycle (down and up)
 
 function smoothScroll(targetPosition, duration) {
   const startPosition = scrollableDiv.scrollTop;
   const startTime = performance.now();
-
   function animation(currentTime) {
     const elapsedTime = currentTime - startTime;
     const progress = Math.min(elapsedTime / duration, 1); // Ensure progress doesn't exceed 1
 
     scrollableDiv.scrollTop = startPosition + (targetPosition - startPosition) * progress;
-
     if (elapsedTime < duration) {
       requestAnimationFrame(animation);
     }
   }
   requestAnimationFrame(animation);
 }
-
 function startScrollLoop() {
   smoothScroll(content.clientHeight - scrollableDiv.clientHeight, scrollDuration / 2);
-
   setTimeout(() => {
     smoothScroll(0, scrollDuration / 2);
-
     setTimeout(startScrollLoop, scrollDuration / 2); // Restart the loop after scrolling back to the top
   }, scrollDuration / 2);
 }
-
 startScrollLoop();
+/******/ })()
+;
+//# sourceMappingURL=view.js.map

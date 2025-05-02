@@ -1,0 +1,160 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/singleartwork/style.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.single-artwork__container {
+  margin: auto;
+  height: 57vh;
+  padding: 1rem;
+  max-width: var(--wp--style--global--wide-size);
+}
+.single-artwork__container img {
+  max-width: 100%;
+}
+
+.single-artwork__inner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--wp--style--block-gap);
+  align-items: flex-start;
+}
+.single-artwork__inner .single-artwork__image {
+  max-width: 50%;
+}
+.single-artwork__inner .single-artwork__image img {
+  max-height: 57vh;
+}
+.single-artwork__inner .single-artwork__image--wide {
+  max-width: 100%;
+}
+.single-artwork__inner .single-artwork__image--landscape {
+  max-width: 100%;
+}
+.single-artwork__inner .single-artwork__image--landscape img {
+  max-height: 50vh;
+}
+@media (max-width: 530px) {
+  .single-artwork__inner .single-artwork__image {
+    max-width: 100%;
+  }
+  .single-artwork__inner .single-artwork__image img {
+    max-height: none;
+  }
+}
+
+.single-artwork__info {
+  flex: 0 0 40%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--wp--style--block-gap) 0;
+}
+.single-artwork__info--wide {
+  flex-grow: 1;
+}
+.single-artwork__info--landscape {
+  flex-grow: 1;
+}
+.single-artwork__info hr {
+  margin-top: var(--wp--preset--spacing--10);
+  margin-bottom: var(--wp--preset--spacing--20);
+  opacity: 0.2;
+  border-color: var(--wp--preset--color--accent-2);
+  width: 80%;
+  margin-right: auto;
+}
+.single-artwork__info h1,
+.single-artwork__info h2,
+.single-artwork__info h5 {
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+.single-artwork__info h2 {
+  margin-bottom: 1rem;
+  font-size: var(--wp--preset--font-size--large);
+}
+.single-artwork__info h5 {
+  margin-bottom: 0rem;
+  font-family: var(--wp--preset--font-family--marcellus);
+  font-size: var(--wp--preset--font-size--small);
+  font-weight: 200;
+  color: var(--wp--preset--color--accent-2);
+}
+.single-artwork__info p {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-size: var(--wp--preset--font-size--small);
+  font-weight: 100;
+  font-family: var(--wp--preset--font-family--body);
+  color: var(--wp--preset--color--contrast-1);
+}
+.single-artwork__info p span.seperator {
+  color: var(--wp--preset--color--accent-5);
+}
+.single-artwork__info p.description {
+  margin-bottom: 1rem;
+  overflow: scroll;
+  margin-top: 1rem;
+  font-weight: 300;
+  font-size: var(--wp--preset--font-size--medium);
+}
+.single-artwork__info .links {
+  text-transform: uppercase;
+  display: flex;
+  gap: 3px;
+}
+.single-artwork__info .links a {
+  text-decoration: none;
+}
+.single-artwork__info .links h5 {
+  font-family: var(--wp--preset--font-family--body);
+  font-size: var(--wp--preset--font-size--medium);
+  color: var(--wp--preset--color--accent-2);
+}
+.single-artwork__info .pagination {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 18px;
+  left: 9px;
+  right: 9px;
+}
+.single-artwork__info .pagination a {
+  font-family: var(--wp--preset--font-family--marcellus);
+  font-size: var(--wp--preset--font-size--small);
+  color: var(--wp--preset--color--contrast-2);
+  text-decoration: none;
+}
+@media (max-width: 530px) {
+  .single-artwork__info {
+    padding-top: 0;
+  }
+  .single-artwork__info h1 {
+    font-size: var(--wp--preset--font-size--x-large);
+    margin-bottom: 0;
+  }
+  .single-artwork__info .info {
+    margin-top: 0;
+    font-size: 0.75rem;
+  }
+}
+
+.artworkinfo-titleblock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avaiableBTN {
+  font-size: var(--wp--preset--font-size--x-small) !important;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
