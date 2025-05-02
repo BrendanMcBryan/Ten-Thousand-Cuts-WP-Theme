@@ -1836,4 +1836,19 @@ select {
   background: transparent;
 }
 
+p.woocommerce-result-count {
+  font-size: var(--wp--preset--font-size--x-small) !important;
+}
+
+form.woocommerce-ordering > select {
+  font-size: var(--wp--preset--font-size--x-small) !important;
+  text-align: right;
+}
+
+@media (max-width: 530px) {
+  .alignwide {
+    margin: auto 5%;
+  }
+}
+
 /*# sourceMappingURL=style-index.css.map*/

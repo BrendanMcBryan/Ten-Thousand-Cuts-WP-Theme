@@ -19,7 +19,6 @@ body {
   // min-height: 100vh;
   overflow: auto;
   scroll-behavior: smooth;
-
 }
 
 // Woo commerce styling adjustments
@@ -84,4 +83,18 @@ select {
 }
 .wp-block-search__input {
   background: transparent;
+}
+
+p.woocommerce-result-count {
+  font-size: var(--wp--preset--font-size--x-small) !important;
+}
+form.woocommerce-ordering > select {
+  font-size: var(--wp--preset--font-size--x-small) !important;
+  text-align: right;
+}
+// add some margin to alignwide on mobile
+.alignwide {
+  @include atSmall {
+    margin: auto 5%;
+  }
 }
