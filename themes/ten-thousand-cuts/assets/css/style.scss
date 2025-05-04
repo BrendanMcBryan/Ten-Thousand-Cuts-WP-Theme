@@ -65,6 +65,11 @@ select {
   }
 }
 .tenthousandcutsHeader {
+
+
+  max-width: var(--wp--style--global--wide-size);
+  flex-grow: 1;
+  margin: auto;
   @include atSmall {
     gap: 0;
     margin: auto 5%;

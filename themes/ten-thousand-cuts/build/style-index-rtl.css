@@ -1815,6 +1815,11 @@ select {
   color: white;
 }
 
+.tenthousandcutsHeader {
+  max-width: var(--wp--style--global--wide-size);
+  flex-grow: 1;
+  margin: auto;
+}
 @media (max-width: 530px) {
   .tenthousandcutsHeader {
     gap: 0;
