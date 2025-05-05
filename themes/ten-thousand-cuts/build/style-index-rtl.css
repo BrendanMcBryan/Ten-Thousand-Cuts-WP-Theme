@@ -1815,6 +1815,11 @@ select {
   color: white;
 }
 
+.ttcHeaderContainter {
+  position: sticky;
+  top: 0;
+}
+
 .tenthousandcutsHeader {
   max-width: var(--wp--style--global--wide-size);
   flex-grow: 1;

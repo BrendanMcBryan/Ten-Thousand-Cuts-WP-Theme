@@ -72,10 +72,17 @@
 
 .wp-block-tenthousandcuts-artworkgallery {
   scroll-behavior: smooth;
+  position: fixed;
+  max-height: 55vh;
+  top: 28%;
+  width: 100%;
+  overflow: scroll;
 }
 
 .artgrid {
-  max-height: 62vh;
+  max-width: var(--wp--style--global--wide-size);
+  margin: auto;
+  overflow: scroll;
   padding-right: 1em;
   padding-left: 1em;
   /* ! Hide scrollbar for IE, Edge and Firefox */
