@@ -1,0 +1,92 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+**/
+
+@import '../../assets/css/mixins';
+// @import 'masonry-layout';
+// @import '/node_modules/masonry-layout/dist/masonry.pkgd.js';
+// @import '/node_modules/@glidejs/glide/src//assets/sass/glide.core.scss';
+// @import 'node_modules/@glidejs/glide/src/assets/sass/glide.core';
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+/* ---- grid ---- */
+
+.grid {
+  background: #EEE;
+  max-width: 1200px;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+width: 20%;
+  height: 120px;
+  float: left;
+  background: #D26;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+}
+
+.grid-item--width2 { width: 40%; }
+.grid-item--width3 { width: 60% }
+.grid-item--width4 { width: 640px; }
+
+.grid-item--height2 { height: 200px; }
+.grid-item--height3 { height: 260px; }
+.grid-item--height4 { height: 360px; }
+
+
+.wp-block-tenthousandcuts-artworkgallery {
+  scroll-behavior: smooth;
+  position: fixed;
+  max-height: 55vh;
+  top: 28%;
+    width: 80%;
+    margin: auto 10%;
+  overflow: scroll;
+  background-color: rgba(127, 255, 212, 0.161);
+}
+
+
+.artgrid {
+  max-width: var(--wp--style--global--wide-size);
+  margin: auto;
+  // overflow: visible;
+  overflow: scroll;
+  padding-right: 1em;
+  padding-left: 1em;
+  /* ! Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  /* ! Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+&__art {
+  height: 27vh;
+  width: 22%;
+  margin-bottom: 1vh;
+  float: left;
+
+}
+
+}
+
+.grid-sizer,
+.grid-item { width: 22%; }
+
+.gutter-sizer { width: 1%; }
+
+.grid-item--width2 { width: 48%; }
