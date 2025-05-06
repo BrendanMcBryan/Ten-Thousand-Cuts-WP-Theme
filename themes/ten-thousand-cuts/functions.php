@@ -480,3 +480,34 @@ function misha_quick_edit_js_update()
 	</script>
 <?php
 }
+
+
+// Add custom Meta tags to site
+
+function custom_meta_tags() {
+	echo '<meta name="description" content="Ten Thousand Cuts is an art project that rescues and reinterprets these printed images through collage.">
+
+
+
+
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.tenthousandcuts.com/" />
+	<meta property="og:title" content="Ten Thousand Cuts" />
+	<meta property="og:description" content="Ten Thousand Cuts is an art project that rescues and reinterprets these printed images through collage." />
+	<meta property="og:image" content="https://www.tenthousandcuts.com/wp-content/uploads/2025/05/TenThousandCutsMetaImage.jpg" />
+	
+
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://www.tenthousandcuts.com/" />
+	<meta property="twitter:title" content="Ten Thousand Cuts" />
+	<meta property="twitter:description" content="Ten Thousand Cuts is an art project that rescues and reinterprets these printed images through collage." />
+	<meta property="twitter:image" content="https://www.tenthousandcuts.com/wp-content/uploads/2025/05/TenThousandCutsMetaImage.jpg" />';
+	
+
+
+
+
+
+
+ }
+ add_action('wp_head', 'custom_meta_tags');
