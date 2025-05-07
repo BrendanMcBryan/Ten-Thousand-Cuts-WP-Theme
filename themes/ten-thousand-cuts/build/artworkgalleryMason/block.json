@@ -3,10 +3,10 @@
   "apiVersion": 3,
   "name": "tenthousandcuts/artworkgallerymason",
   "version": "0.2.0",
-  "title": " Mason Artwork Archive Gallery",
+  "title": " Masonry Artwork Archive Gallery",
   "category": "theme",
   "icon": "format-gallery",
-  "description": "Mason Grid of Artwork Posts",
+  "description": "Randomized Mason Grid of Artwork Posts",
   "example": {},
   "supports": {
     "html": false
