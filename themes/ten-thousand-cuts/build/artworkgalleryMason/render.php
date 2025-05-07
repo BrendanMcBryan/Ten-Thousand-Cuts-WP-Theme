@@ -56,7 +56,7 @@
 
                 ?>
 
-				<div class="artgrid__art art				                            				                            				                            				                            				                            				                            	 <?php echo $frameclass ?>" style="background-image: url(<?php echo get_field('hero_image') ?>);">
+				<div class="artgrid__art art				                            				                            				                            				                            				                            				                            				                            	 <?php echo $frameclass ?>" style="background-image: url(<?php echo get_field('hero_image') ?>);">
 					<h2 class="artgrid__art__title"><?php echo get_field('title') ?></h2>
 					<a href="<?php echo get_the_permalink() ?>"> </a>
 				</div>
