@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/artworkgallerymason/edit.js":
-/*!*****************************************!*\
-  !*** ./src/artworkgallerymason/edit.js ***!
-  \*****************************************/
+/***/ "./src/masonryartarchive/edit.js":
+/*!***************************************!*\
+  !*** ./src/masonryartarchive/edit.js ***!
+  \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -16,7 +16,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./editor.scss */ "./src/artworkgallerymason/editor.scss");
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./editor.scss */ "./src/masonryartarchive/editor.scss");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__);
 /**
@@ -54,24 +54,24 @@ __webpack_require__.r(__webpack_exports__);
 function Edit() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)(),
-    children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Masonry Artwork Gallery - Shows randomized grid of Artwork posts")
+    children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Masonryartarchive – hello from the editor!', 'masonryartarchive')
   });
 }
 
 /***/ }),
 
-/***/ "./src/artworkgallerymason/index.js":
-/*!******************************************!*\
-  !*** ./src/artworkgallerymason/index.js ***!
-  \******************************************/
+/***/ "./src/masonryartarchive/index.js":
+/*!****************************************!*\
+  !*** ./src/masonryartarchive/index.js ***!
+  \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/artworkgallerymason/style.scss");
-/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/artworkgallerymason/edit.js");
-/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./block.json */ "./src/artworkgallerymason/block.json");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/masonryartarchive/style.scss");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/masonryartarchive/edit.js");
+/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./block.json */ "./src/masonryartarchive/block.json");
 /**
  * Registers a new block provided a unique name and an object defining its behavior.
  *
@@ -108,10 +108,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/artworkgallerymason/editor.scss":
-/*!*********************************************!*\
-  !*** ./src/artworkgallerymason/editor.scss ***!
-  \*********************************************/
+/***/ "./src/masonryartarchive/editor.scss":
+/*!*******************************************!*\
+  !*** ./src/masonryartarchive/editor.scss ***!
+  \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -120,10 +120,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/artworkgallerymason/style.scss":
-/*!********************************************!*\
-  !*** ./src/artworkgallerymason/style.scss ***!
-  \********************************************/
+/***/ "./src/masonryartarchive/style.scss":
+/*!******************************************!*\
+  !*** ./src/masonryartarchive/style.scss ***!
+  \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -172,13 +172,13 @@ module.exports = window["wp"]["i18n"];
 
 /***/ }),
 
-/***/ "./src/artworkgallerymason/block.json":
-/*!********************************************!*\
-  !*** ./src/artworkgallerymason/block.json ***!
-  \********************************************/
+/***/ "./src/masonryartarchive/block.json":
+/*!******************************************!*\
+  !*** ./src/masonryartarchive/block.json ***!
+  \******************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"tenthousandcuts/artworkgallerymason","version":"0.2.0","title":" Masonry Artwork Archive Gallery","category":"theme","icon":"format-gallery","description":"Randomized Masonry Grid of Artwork Posts","example":{},"supports":{"html":false},"textdomain":"artworkgallerymason","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"tenthousandcuts/masonryartarchive","version":"0.1.0","title":"Masonry art archive","category":"theme","icon":"layout","description":"Randomized Masonry Grid of Artwork Posts","example":{},"supports":{"html":false},"textdomain":"masonryartarchive","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ })
 
@@ -294,8 +294,8 @@ module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/tru
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"artworkgallerymason/index": 0,
-/******/ 			"artworkgallerymason/style-index": 0
+/******/ 			"masonryartarchive/index": 0,
+/******/ 			"masonryartarchive/style-index": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -347,7 +347,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/tru
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["artworkgallerymason/style-index"], () => (__webpack_require__("./src/artworkgallerymason/index.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["masonryartarchive/style-index"], () => (__webpack_require__("./src/masonryartarchive/index.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

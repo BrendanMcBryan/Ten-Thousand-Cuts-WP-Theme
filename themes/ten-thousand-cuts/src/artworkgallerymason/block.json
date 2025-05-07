@@ -7,7 +7,7 @@
   "category": "theme",
   "icon": "format-gallery",
 
-  "description": "Randomized Mason Grid of Artwork Posts",
+  "description": "Randomized Masonry Grid of Artwork Posts",
   "example": {},
   "supports": {
     "html": false
