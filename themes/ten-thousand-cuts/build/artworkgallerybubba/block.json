@@ -1,17 +1,17 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "tenthousandcuts/artworkdisplaycontainer",
+  "name": "tenthousandcuts/artworkgallerybubba",
   "version": "0.1.0",
-  "title": "Artwork Slider Display",
-  "category": "theme",
-  "icon": "format-gallery",
-  "description": "Block to to display featured artwork as a slide show",
+  "title": "Artworkgallerybubba",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
   "example": {},
   "supports": {
     "html": false
   },
-  "textdomain": "artworkdisplaycontainer",
+  "textdomain": "artworkgallerybubba",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css",
