@@ -3,23 +3,21 @@
  * and in the editor.
 **/
 
-@import '../../assets/css/mixins';
+@import "../../assets/css/mixins";
 
-@import '/node_modules/@glidejs/glide/src//assets/sass/glide.core.scss';
+@import "/node_modules/@glidejs/glide/src//assets/sass/glide.core.scss";
 // @import 'node_modules/@glidejs/glide/src/assets/sass/glide.core';
 
 .wp-block-tenthousandcuts-artworkgallery {
   scroll-behavior: smooth;
   position: fixed;
   max-height: 55vh;
-  top: 28%;
-    width: 100%;
+  top: 23%;
+  width: 100%;
   overflow: scroll;
 }
 
-
 .artgrid {
-
   max-width: var(--wp--style--global--wide-size);
 
   margin: auto;
