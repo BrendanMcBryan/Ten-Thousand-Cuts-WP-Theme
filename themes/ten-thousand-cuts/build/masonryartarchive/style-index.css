@@ -1,16 +1,1 @@
-/*!*********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/masonryartarchive/style.scss ***!
-  \*********************************************************************************************************************************************************************************************************************************************************/
-/**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
-.wp-block-tenthousandcuts-masonryartarchive {
-  background-color: #21759b;
-  color: #fff;
-  padding: 2px;
-}
-
-/*# sourceMappingURL=style-index.css.map*/
+.wp-block-tenthousandcuts-artworkgallerymason{margin:auto 10%;max-height:55vh;overflow:scroll;position:fixed;scroll-behavior:smooth;top:26%;width:80%;-ms-overflow-style:none;scrollbar-width:none}.wp-block-tenthousandcuts-artworkgallerymason::-webkit-scrollbar{display:none}@media(max-width:530px){.wp-block-tenthousandcuts-artworkgallerymason{margin:auto 0;width:100%}}.artgrid{margin:auto;max-width:var(--wp--style--global--wide-size)}.artgrid__art a{bottom:0;display:inline-block;left:0;position:absolute;right:0;top:0}.artgrid__art__title{bottom:0;color:#fff;font-size:var(--wp--preset--font-size--small);left:0;margin:0;padding:0 0 3px 3px;position:absolute;text-align:left;text-shadow:1px 2px 1px rgba(0,0,0,.8)}.artgrid__strip{margin:0 auto}@media(max-width:530px){.artgrid__strip{margin:0;width:100%}}.artgrid__strip:after{clear:both;content:"";display:block}.art{background-position:center 20%;background-repeat:no-repeat;background-size:180%;height:25vh;margin-bottom:2px;text-align:center;transition:all 3s;width:20%}@media(max-width:530px){.art{background-color:#6a5acd;background-size:180%;height:15vh;width:32%}}.art:hover{background-position:50%;background-size:140%}.art__landscape{width:40.1%}@media(max-width:530px){.art__landscape{width:65%}}.art__wide{background-position:50%;background-size:240%;width:60.4%}.art__wide:hover{background-size:220%}@media(max-width:530px){.art__wide{background-size:230%;width:100%}}.art__tall{background-position:bottom;height:50vh}@media(max-width:530px){.art__tall{background-color:#6a5acd;background-size:180%;height:30vh;width:32%}}.grid-item,.grid-sizer{width:19.2%}@media(max-width:530px){.grid-item,.grid-sizer{width:32.6666666667%}}.gutter-sizer{width:1%}@media(max-width:530px){.gutter-sizer{width:0}}
