@@ -2437,15 +2437,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var masonry_layout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! masonry-layout */ "./node_modules/masonry-layout/masonry.js");
 /* harmony import */ var masonry_layout__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(masonry_layout__WEBPACK_IMPORTED_MODULE_0__);
 
-var elem = document.querySelector('.artgrid__strip');
+var elem = document.querySelector(".artgrid__strip");
 var msnry = new (masonry_layout__WEBPACK_IMPORTED_MODULE_0___default())(elem, {
   // options
-  itemSelector: '.artgrid__art',
-  columnWidth: '.grid-sizer',
-  gutter: '.gutter-sizer',
-  percentPosition: true
-
-  // gutter:10,
+  itemSelector: ".artgrid__art",
+  columnWidth: ".grid-sizer",
+  gutter: ".gutter-sizer",
+  percentPosition: true,
+  fitWidth: true
 });
 })();
 
