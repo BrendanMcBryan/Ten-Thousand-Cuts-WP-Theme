@@ -78,7 +78,7 @@ $productPrice = wc_get_product_price(291);
                             <div class="avaiableBTN">
 
                                 <a class=" avaiableBTN wp-block-button__link wp-element-button " href="<?php echo
-                                                                                                        '/?s=' . get_field('title') . '&post_type=product' ?>"> Prints Available</a>
+                                                                                                        '/?s=' . get_field('title') . '&post_type=product' ?>">Prints</a>
                             </div>
                         <?php    } ?>
                     </div>
