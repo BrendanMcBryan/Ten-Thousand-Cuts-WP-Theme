@@ -1860,6 +1860,12 @@ form.woocommerce-ordering > select {
 }
 
 @media (max-width: 530px) {
+  .wp-block-woocommerce-featured-product {
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 530px) {
   .alignwide {
     margin: auto 5%;
   }

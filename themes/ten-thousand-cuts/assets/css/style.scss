@@ -93,6 +93,7 @@ select {
   background: transparent;
 }
 
+// Woo Commerce fixes
 p.woocommerce-result-count {
   font-size: var(--wp--preset--font-size--x-small) !important;
 }
@@ -100,6 +101,12 @@ form.woocommerce-ordering > select {
   font-size: var(--wp--preset--font-size--x-small) !important;
   text-align: right;
 }
+.wp-block-woocommerce-featured-product {
+  @include atSmall {
+    margin: 0 !important;
+  }
+}
+
 // add some margin to alignwide on mobile
 .alignwide {
   @include atSmall {
