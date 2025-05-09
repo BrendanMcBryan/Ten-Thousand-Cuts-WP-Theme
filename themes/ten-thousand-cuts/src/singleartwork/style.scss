@@ -171,7 +171,7 @@
   }
 
   @include atSmall {
-    padding-top: 0;
+    padding: 0 1em;
     h1 {
       font-size: var(--wp--preset--font-size--x-large);
       margin-bottom: 0;
