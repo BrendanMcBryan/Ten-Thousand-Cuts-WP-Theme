@@ -30,9 +30,5 @@ import './editor.scss';
  * @return {Element} Element to render.
  */
 export default function Edit() {
-	return (
-		<p { ...useBlockProps() }>
-			{ __( 'Singleartwork – hello from the editor!', 'singleartwork' ) }
-		</p>
-	);
+  return <p {...useBlockProps()}>{__('Single Artwork – Display')}</p>;
 }

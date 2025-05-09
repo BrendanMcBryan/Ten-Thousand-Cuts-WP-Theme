@@ -9,7 +9,6 @@
  */
 .single-artwork__container {
   display: block;
-  background-color: pink;
   scroll-behavior: smooth;
   position: fixed;
   height: 55vh;

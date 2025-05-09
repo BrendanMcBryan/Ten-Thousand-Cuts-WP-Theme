@@ -5,11 +5,11 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-@import "../../assets/css/mixins";
+@import '../../assets/css/mixins';
 
 .single-artwork__container {
   display: block;
-  background-color: pink;
+  // background-color: pink;
 
   scroll-behavior: smooth;
   position: fixed;
