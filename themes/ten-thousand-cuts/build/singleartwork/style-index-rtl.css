@@ -8,9 +8,17 @@
  * Replace them with your own styles or remove the file completely.
  */
 .single-artwork__container {
+  display: block;
+  background-color: pink;
+  scroll-behavior: smooth;
+  position: fixed;
+  height: 55vh;
+  max-height: 55vh;
+  top: 26%;
+  right: 0;
+  left: 0;
+  width: 100%;
   margin: auto;
-  height: 57vh;
-  padding: 1rem;
   max-width: var(--wp--style--global--wide-size);
 }
 .single-artwork__container img {
@@ -24,26 +32,27 @@
   gap: var(--wp--style--block-gap);
   align-items: flex-start;
 }
-.single-artwork__inner .single-artwork__image {
+
+.single-artwork__image {
   max-width: 50%;
 }
-.single-artwork__inner .single-artwork__image img {
-  max-height: 57vh;
+.single-artwork__image img {
+  max-height: 55vh;
 }
-.single-artwork__inner .single-artwork__image--wide {
+.single-artwork__image--wide {
   max-width: 100%;
 }
-.single-artwork__inner .single-artwork__image--landscape {
+.single-artwork__image--landscape {
   max-width: 100%;
 }
-.single-artwork__inner .single-artwork__image--landscape img {
+.single-artwork__image--landscape img {
   max-height: 50vh;
 }
 @media (max-width: 530px) {
-  .single-artwork__inner .single-artwork__image {
+  .single-artwork__image {
     max-width: 100%;
   }
-  .single-artwork__inner .single-artwork__image img {
+  .single-artwork__image img {
     max-height: none;
   }
 }
@@ -119,11 +128,13 @@
   color: var(--wp--preset--color--accent-2);
 }
 .single-artwork__info .pagination {
+  margin: auto;
   margin-top: 1.5rem;
+  max-width: var(--wp--style--global--wide-size);
   display: flex;
   justify-content: space-between;
   position: fixed;
-  bottom: 18px;
+  bottom: 5%;
   right: 9px;
   left: 9px;
 }

@@ -5,13 +5,27 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-@import '../../assets/css/mixins';
+@import "../../assets/css/mixins";
 
 .single-artwork__container {
+  display: block;
+  background-color: pink;
+
+  scroll-behavior: smooth;
+  position: fixed;
+  height: 55vh;
+  max-height: 55vh;
+  top: 26%;
+  left: 0;
+  right: 0;
+  width: 100%;
+
+  // margin: auto 10%;
+
   margin: auto;
-  height: 57vh;
-  padding: 1rem;
   max-width: var(--wp--style--global--wide-size);
+
+  // max-width: var(--wp--style--global--wide-size);
   img {
     // width: 100%;
     max-width: 100%;
@@ -24,26 +38,25 @@
   flex-wrap: wrap;
   gap: var(--wp--style--block-gap);
   align-items: flex-start;
-
-  .single-artwork__image {
-    max-width: 50%;
+}
+.single-artwork__image {
+  max-width: 50%;
+  img {
+    max-height: 55vh;
+  }
+  &--wide {
+    max-width: 100%;
+  }
+  &--landscape {
+    max-width: 100%;
     img {
-      max-height: 57vh;
+      max-height: 50vh;
     }
-    &--wide {
-      max-width: 100%;
-    }
-    &--landscape {
-      max-width: 100%;
-      img {
-        max-height: 50vh;
-      }
-    }
-    @include atSmall {
-      max-width: 100%;
-      img {
-        max-height: none;
-      }
+  }
+  @include atSmall {
+    max-width: 100%;
+    img {
+      max-height: none;
     }
   }
 }
@@ -129,7 +142,9 @@
   }
 
   .pagination {
+    margin: auto;
     margin-top: 1.5rem;
+    max-width: var(--wp--style--global--wide-size);
 
     display: flex;
     justify-content: space-between;
@@ -142,9 +157,9 @@
     }
 
     position: fixed;
-  bottom: 18px;
-  left: 9px;
-  right: 9px;
+    bottom: 5%;
+    left: 9px;
+    right: 9px;
   }
 
   @include atSmall {
@@ -159,8 +174,6 @@
       font-size: 0.75rem;
     }
   }
-
-
 }
 
 .artworkinfo-titleblock {
@@ -170,6 +183,6 @@
 }
 
 .avaiableBTN {
-  // margin-top: 1em;      
+  // margin-top: 1em;
   font-size: var(--wp--preset--font-size--x-small) !important;
 }
