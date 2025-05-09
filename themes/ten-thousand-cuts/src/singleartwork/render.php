@@ -50,7 +50,7 @@ function wc_get_product_price($product_id)
 $productPrice = wc_get_product_price(291);
 
 ?>
-<div class="single-artwork__container" <?php echo get_block_wrapper_attributes(); ?>>
+<div class="single-artwork__container alignwide" <?php echo get_block_wrapper_attributes(); ?>>
 
     <div class="single-artwork__inner">
         <div class="single-artwork__image single-artwork__image--<?php echo $imageclass ?>">
