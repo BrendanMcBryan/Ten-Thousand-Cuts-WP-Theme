@@ -70,12 +70,11 @@
   background-size: 180%;
   margin-bottom: 2px;
   text-align: center;
-  height: 25vh;
+  height: 13.75vh;
 }
 @media (max-width: 530px) {
   .art {
     height: 15vh;
-    background-color: slateblue;
     background-size: 180%;
     width: 32%;
   }
@@ -106,14 +105,20 @@
     width: 100%;
   }
 }
+.art__x-wide {
+  width: 80.5%;
+  background-position: center;
+}
+.art__portrait {
+  height: 27.5vh;
+}
 .art__tall {
   background-position: center bottom;
-  height: 50vh;
+  height: 41.25vh;
 }
 @media (max-width: 530px) {
   .art__tall {
     height: 30vh;
-    background-color: slateblue;
     background-size: 180%;
     width: 32%;
   }

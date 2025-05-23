@@ -1,4 +1,4 @@
-@import "../../assets/css/mixins";
+@import '../../assets/css/mixins';
 
 .wp-block-tenthousandcuts-artworkgallerymason {
   scroll-behavior: smooth;
@@ -60,7 +60,7 @@
       margin: 0;
     }
     &:after {
-      content: "";
+      content: '';
       display: block;
       clear: both;
     }
@@ -70,7 +70,6 @@
 .art {
   transition: all 3s;
   width: 20%;
-  // width: calc(96% / 5);
 
   background-repeat: no-repeat;
   background-position: center 20%;
@@ -80,11 +79,11 @@
   margin-bottom: 2px;
   text-align: center;
 
-  height: 25vh;
+  height: calc(55vh / 4);
 
   @include atSmall {
     height: 15vh;
-    background-color: slateblue;
+
     background-size: 180%;
     width: 32%;
   }
@@ -114,13 +113,21 @@
       width: 100%;
     }
   }
+
+  &__x-wide {
+    width: 80.5%;
+    background-position: center;
+  }
+  &__portrait {
+    height: calc(55vh * 2 / 4);
+  }
   &__tall {
     background-position: center bottom;
-    height: 50vh;
+    height: calc(55vh * 3 / 4);
 
     @include atSmall {
       height: 30vh;
-      background-color: slateblue;
+      // background-color: slateblue;
       background-size: 180%;
       width: 32%;
     }
