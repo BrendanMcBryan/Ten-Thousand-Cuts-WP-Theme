@@ -12,7 +12,7 @@
   // background-color: pink;
 
   scroll-behavior: smooth;
-  overflow: scroll;
+  overflow: auto;
   position: fixed;
   height: 55vh;
   max-height: 55vh;
@@ -34,6 +34,7 @@
   //   display: none;
   // }
 
+  scrollbar-width: thin;
   img {
     // width: 100%;
     max-width: 100%;
@@ -71,12 +72,15 @@
 
 .single-artwork__info {
   // min-width: 0;
+  overflow: scroll;
+
   flex: 0 0 40%;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: var(--wp--style--block-gap) 0;
+  padding-right: 18px;
 
   &--wide {
     flex-grow: 1;

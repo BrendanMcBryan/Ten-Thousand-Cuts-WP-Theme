@@ -10,7 +10,7 @@
 .single-artwork__container {
   display: block;
   scroll-behavior: smooth;
-  overflow: scroll;
+  overflow: auto;
   position: fixed;
   height: 55vh;
   max-height: 55vh;
@@ -20,6 +20,7 @@
   width: 100%;
   margin: auto;
   max-width: var(--wp--style--global--wide-size);
+  scrollbar-width: thin;
 }
 .single-artwork__container img {
   max-width: 100%;
@@ -58,12 +59,14 @@
 }
 
 .single-artwork__info {
+  overflow: scroll;
   flex: 0 0 40%;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: var(--wp--style--block-gap) 0;
+  padding-left: 18px;
 }
 .single-artwork__info--wide {
   flex-grow: 1;
