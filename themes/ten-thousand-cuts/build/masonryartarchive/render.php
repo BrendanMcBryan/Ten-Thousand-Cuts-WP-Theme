@@ -30,23 +30,31 @@
             while ($artwork->have_posts()) {
                 $artwork->the_post();
                 list($width, $height, $type, $attr) = getimagesize(get_field('hero_image'));
-                $aspectratio                        = $width / $height;
+                $aspectratio = $width / $height;
+
+
                 switch ($aspectratio) {
                     // * tall images
                     case $aspectratio <= .6:
                         $frameclass = "art__tall";
                         break;
                     // * portrait images
-                    case ($aspectratio > .6 && $aspectratio < 1):
+                    case ($aspectratio > .6 && $aspectratio <= 1):
                         $frameclass = "art__portrait";
+                        if (get_field('width') <= 6 || get_field('height') <= 6) {
+                            $frameclass .= " art__small";
+                        }
 
                         break;
                     // * landscape images
-                    case ($aspectratio > 1 && $aspectratio < 3):
+                    case ($aspectratio > 1 && $aspectratio <= 3):
                         $frameclass = "art__landscape";
+                        if (get_field('width') <= 6 || get_field('height') <= 6) {
+                            $frameclass .= " art__small";
+                        }
                         break;
                     // * wide images
-                    case $aspectratio > 3 && $aspectratio < 4:
+                    case $aspectratio > 3 && $aspectratio <= 4:
                         $frameclass = "art__wide";
                         break;
                     case $aspectratio >= 4:
@@ -57,9 +65,11 @@
                         $frameclass = "art__portrait";
                 }
 
+
+
             ?>
 
-                <div class="artgrid__art art				                            				                            				                            				                            				                            				                            				                            				                            	 <?php echo $frameclass ?>" style="background-image: url(<?php echo get_field('hero_image') ?>);">
+                <div class="artgrid__art art <?php echo $frameclass ?>" style="background-image: url(<?php echo get_field('hero_image') ?>);">
                     <h2 class="artgrid__art__title"><?php echo get_field('title') ?></h2>
                     <a href="<?php echo get_the_permalink() ?>"> </a>
                 </div>

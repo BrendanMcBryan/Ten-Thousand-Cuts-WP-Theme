@@ -1,12 +1,17 @@
 @import '../../assets/css/mixins';
 
 .wp-block-tenthousandcuts-artworkgallerymason {
+  width: 100%;
+  max-width: var(--wp--style--global--wide-size);
+  margin: auto;
+  max-height: 55vh;
+
   scroll-behavior: smooth;
   position: fixed;
-  max-height: 55vh;
   top: 26%;
-  width: 80%;
-  margin: auto 10%;
+
+  margin-left: auto;
+  margin-right: auto;
   overflow: scroll;
   /* ! Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
@@ -95,13 +100,14 @@
 
   &__landscape {
     width: 40.1%;
+    height: calc(55vh * 3 / 8);
+
     @include atSmall {
       width: 65%;
     }
   }
   &__wide {
     width: 60.4%;
-
     background-position: center center;
     background-size: 240%;
     &:hover {
@@ -131,6 +137,11 @@
       background-size: 180%;
       width: 32%;
     }
+  }
+
+  // make smaller pieces small on screen
+  &__small {
+    height: calc(55vh * 1 / 4);
   }
 }
 

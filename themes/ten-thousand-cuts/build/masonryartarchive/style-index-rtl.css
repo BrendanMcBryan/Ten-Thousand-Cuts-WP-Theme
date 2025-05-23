@@ -2,12 +2,15 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/masonryartarchive/style.scss ***!
   \*********************************************************************************************************************************************************************************************************************************************************/
 .wp-block-tenthousandcuts-artworkgallerymason {
+  width: 100%;
+  max-width: var(--wp--style--global--wide-size);
+  margin: auto;
+  max-height: 55vh;
   scroll-behavior: smooth;
   position: fixed;
-  max-height: 55vh;
   top: 26%;
-  width: 80%;
-  margin: auto 10%;
+  margin-right: auto;
+  margin-left: auto;
   overflow: scroll;
   /* ! Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
@@ -85,6 +88,7 @@
 }
 .art__landscape {
   width: 40.1%;
+  height: 20.625vh;
 }
 @media (max-width: 530px) {
   .art__landscape {
@@ -122,6 +126,9 @@
     background-size: 180%;
     width: 32%;
   }
+}
+.art__small {
+  height: 13.75vh;
 }
 
 .grid-sizer,
