@@ -25,14 +25,14 @@
 
   margin: auto;
   max-width: var(--wp--style--global--wide-size);
-  /* ! Hide scrollbar for IE, Edge and Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  // /* ! Hide scrollbar for IE, Edge and Firefox */
+  // -ms-overflow-style: none; /* IE and Edge */
+  // scrollbar-width: none; /* Firefox */
 
-  /* ! Hide scrollbar for Chrome, Safari and Opera */
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  // /* ! Hide scrollbar for Chrome, Safari and Opera */
+  // &::-webkit-scrollbar {
+  //   display: none;
+  // }
 
   img {
     // width: 100%;
@@ -115,9 +115,8 @@
     color: var(--wp--preset--color--accent-2);
   }
   p {
-    margin-top: 0.5rem;
-    margin-bottom: 0;
-    font-size: var(--wp--preset--font-size--small);
+    margin: 0.5rem 0;
+    font-size: var(--wp--preset--font-size--medium);
     font-weight: 100;
     font-family: var(--wp--preset--font-family--body);
     color: var(--wp--preset--color--contrast-1);
@@ -193,4 +192,46 @@
 .avaiableBTN {
   // margin-top: 1em;
   font-size: var(--wp--preset--font-size--x-small) !important;
+}
+
+// Scroll indicator
+.scroll-indicator {
+  position: fixed; /* Or absolute */
+  bottom: 5%; /* Adjust as needed */
+  left: 50%;
+  animation: bounce 5s infinite; /* Adjust duration and timing */
+  transform: translateX(-50%);
+  display: block;
+}
+
+#scrollDown {
+  height: 22px;
+  opacity: 0.4;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  50% {
+    display: block;
+    transform: translateY(-20px);
+    opacity: 60%;
+  } /* Adjust bounce height */
+  75% {
+    display: block;
+    opacity: 100%;
+  }
+  100% {
+    display: block;
+    transform: translateY(0);
+    opacity: 0;
+  }
 }

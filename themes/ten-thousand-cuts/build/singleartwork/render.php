@@ -2,6 +2,10 @@
 // * get image aspect ratio, set image column width based on that aspect ration
 list($width, $height, $type, $attr) = getimagesize(get_field('hero_image'));
 
+
+$scrolldown = get_template_directory_uri() . '/assets/images/ScrollDown.svg';
+
+
 $aspectratio = $width / $height;
 switch ($aspectratio) {
 
@@ -96,7 +100,7 @@ $productPrice = wc_get_product_price(291);
                 <?php
                 if (get_field('description')) {
 
-                ?> <p class="description"><?php echo get_field('description') ?> </p>
+                ?> <p class="description"><?php the_field('description') ?> </p>
                 <?php }
 
                 ?>
@@ -134,5 +138,7 @@ $productPrice = wc_get_product_price(291);
         </div>
 
     </div>
-
+    <!-- <div class="scroll-indicator">
+        <img src="<?php echo $scrolldown ?>" id="scrollDown" />
+    </div> -->
 </div>
