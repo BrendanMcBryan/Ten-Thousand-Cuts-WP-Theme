@@ -103,7 +103,7 @@
     height: calc(55vh * 3 / 8);
 
     @include atSmall {
-      width: 65%;
+      width: 100%;
     }
   }
   &__wide {
@@ -123,9 +123,16 @@
   &__x-wide {
     width: 80.5%;
     background-position: center;
+    @include atSmall {
+      width: 100%;
+      background-size: 250%;
+    }
   }
   &__portrait {
     height: calc(55vh * 2 / 4);
+    @include atSmall {
+      width: 100%;
+    }
   }
   &__tall {
     background-position: center bottom;
@@ -135,7 +142,8 @@
       height: 30vh;
       // background-color: slateblue;
       background-size: 180%;
-      width: 32%;
+      // width: calc((100% - 2%) / 3);
+      width: 32.6%;
     }
   }
 

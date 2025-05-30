@@ -499,7 +499,7 @@ add_action('wp_head', 'custom_meta_tags');
 
 
 // Hide Woo Commerce cart if it is empty
-// Hide entire Theme Builder cart if cart is empty
+
 add_action('wp_footer', function () {
     if (WC()->cart->is_empty()) {
         echo '<style type="text/css">.wc-block-mini-cart { display: none; }</style>';
